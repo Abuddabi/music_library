@@ -39,13 +39,19 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
+      - name: Verify dist folder
+        run: |
+          if [ ! -d "./dist" ]; then
+            echo "Build directory 'dist' does not exist. Exiting."
+            exit 1
+          fi
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload dist folder
-          path: "../dist"
+          path: "./dist"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

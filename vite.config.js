@@ -4,9 +4,9 @@ import { defineConfig } from "vite";
 export default defineConfig({
   root: "src/",
   base: "/music_library/",
-  build: {
-    outDir: "../dist"
-  }
+  // build: {
+  //   outDir: "../dist"
+  // }
 
   // rollupOptions: {
   //   input: {
