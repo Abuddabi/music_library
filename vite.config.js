@@ -4,6 +4,9 @@ import { defineConfig } from "vite";
 export default defineConfig({
   root: "src/",
   base: "/music_library/",
+  build: {
+    outDir: resolve(__dirname, "src/dist"),
+  },
   // build: {
   //   outDir: "../dist"
   // }
