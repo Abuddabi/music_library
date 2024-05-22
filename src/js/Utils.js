@@ -48,3 +48,5 @@ export function getParams(param) {
   // get and return the first param
   return urlParams.get(param);
 }
+
+export const noImage = "/music_library/images/no-avatar.webp";

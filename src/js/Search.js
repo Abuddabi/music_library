@@ -1,4 +1,4 @@
-import { fetchAPI, setClick } from "./Utils";
+import { fetchAPI, noImage, setClick } from "./Utils";
 
 export const handleSearch = () => {
   const searchForm = document.querySelector("#search-form");
@@ -53,7 +53,7 @@ const showSearchResult = (result, list) => {
           class="search-item"
           data-type="song"
           data-id="${track.key}"
-          style="background-image: url('${track.images?.coverart ?? "/music_library/images/no-avatar.webp"}')">
+          style="background-image: url('${track.images?.coverart ?? noImage}')">
           ${track.title} - ${track.subtitle}
         </li>
       `;
@@ -75,7 +75,7 @@ const showSearchResult = (result, list) => {
           class="search-item"
           data-type="artist"
           data-id="${artist.id}"
-          style="background-image: url('${artist.avatar ?? "/music_library/images/no-avatar.webp"}')">
+          style="background-image: url('${artist.avatar ?? noImage}')">
           ${artist.name}
         </li>
       `;
