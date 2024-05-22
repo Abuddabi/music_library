@@ -2,11 +2,13 @@ import { resolve } from "path";
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  root: "src/",
+  root: resolve(__dirname, './src'),
+  publicDir: 'public',
   base: "/music_library/",
   build: {
     outDir: resolve(__dirname, "src/dist"),
   },
+  envDir: resolve(__dirname),
 
   // rollupOptions: {
   //   input: {
