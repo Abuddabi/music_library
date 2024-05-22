@@ -19,8 +19,8 @@ export const handleSearch = () => {
       }
       list.hidden = false;
       list.innerHTML = "";
-      // const result = await fetchAPI("/search", { "term": searchValue });
-      const result = await fetchAPI("SEARCH.json", {}, true);
+      const result = await fetchAPI("/search", { "term": searchValue });
+      // const result = await fetchAPI("SEARCH.json", {}, true);
 
       if (Object.entries(result).length === 0) {
         list.innerHTML = `<li class="search-no-result">No results found. Please try another search term.</li>`;
