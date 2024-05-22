@@ -27,3 +27,24 @@ export const fetchAPI = async (endpoint, params = {}, dev = false) => {
     throw new Error(error.message);
   }
 }
+
+export const qs = (selector, parent = document) => parent.querySelector(selector);
+
+// set a listener for both touchend and click
+export function setClick(selector, callback) {
+  if (typeof selector === "string") selector = qs(selector);
+
+  selector.addEventListener("touchend", (event) => {
+    event.preventDefault();
+    callback();
+  });
+  selector.addEventListener("click", callback);
+}
+
+// get params from url
+export function getParams(param) {
+  // parse the params in url
+  const urlParams = new URLSearchParams(window.location.search);
+  // get and return the first param
+  return urlParams.get(param);
+}

@@ -1,4 +1,4 @@
-import { fetchAPI } from "./Utils";
+import { fetchAPI, setClick } from "./Utils";
 
 export const handleSearch = () => {
   const searchForm = document.querySelector("#search-form");
@@ -87,11 +87,11 @@ const handleSearchItemClick = () => {
   const items = document.querySelectorAll(".search-item");
 
   items.forEach(li => {
-    li.addEventListener("click", () => {
-      const type = li.dataset.type;
-      const id = li.dataset.id;
+    const clickHandler = (e) => {
+      const data = e.target.dataset;
+      window.location.href = `/music_library/detail-page.html?type=${data.type}&id=${data.id}`;
+    };
 
-      window.location.href = `/music_library/detail-page.html?type=${type}&id=${id}`;
-    });
+    setClick(li, clickHandler);
   });
 }
