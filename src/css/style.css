@@ -1,28 +1,132 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  --body-font: "Roboto", sans-serif;
+  --heading-font: "Raleway", sans-serif;
+  --black: #0a0a0a;
+  --white: #f5f5f5;
+  --green: #1ed760;
+  --blue: #066aff;
+  --red: #e3170a;
 
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  font-family: var(--body-font);
+  line-height: 1;
+  font-weight: 400;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
+
+  color: var(--black);
+  background-color: var(--white);
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 body {
-  margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
+  flex-direction: column;
   min-height: 100vh;
+  background-color: var(--white);
+}
+
+header {
+  padding: 15px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+}
+
+.logo-name {
+  padding-left: 20px;
+  color: var(--black);
+  font-family: var(--heading-font);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 132%;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.search-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-input,
+.search-button {
+  width: 100%;
+  margin: 5px 0;
+  border-radius: 4px;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.search-button {
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.search-button .icon {
+  width: 20px;
+  height: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  font-size: 14px;
+  color: #555;
+}
+
+@media (min-width: 600px) {
+  .search-form {
+    width: 80%;
+    max-width: 600px;
+    flex-direction: row;
+  }
+
+  .search-input {
+    border-radius: 4px 0 0 4px;
+    margin: 0;
+  }
+
+  .search-button {
+    width: 150px;
+    border-radius: 0 4px 4px 0;
+    margin: 0;
+  }
 }
