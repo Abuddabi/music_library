@@ -89,7 +89,7 @@ const handleSearchItemClick = () => {
   items.forEach(li => {
     const clickHandler = (e) => {
       const data = e.target.dataset;
-      window.location.href = `/music_library/detail.html?type=${data.type}&id=${data.id}`;
+      window.location.href = `/detail.html?type=${data.type}&id=${data.id}`;
     };
 
     setClick(li, clickHandler);
