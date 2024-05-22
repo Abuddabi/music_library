@@ -26,7 +26,7 @@ const renderSongDetails = async () => {
         <p class="details-no-result">
           No results found. Please try another id or type.
         </p>
-        <a class="go-home-btn" href="/">To Home Page</a>`;
+        <a class="go-home-btn" href="/music_library/">To Home Page</a>`;
       return;
     } else {
       //success
