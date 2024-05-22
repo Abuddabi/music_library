@@ -10,13 +10,10 @@ export default defineConfig({
   },
   envDir: resolve(__dirname),
 
-  // rollupOptions: {
-  //   input: {
-  //     main: resolve(__dirname, "src/index.html"),
-  //     cart: resolve(__dirname, "src/cart/index.html"),
-  //     checkout: resolve(__dirname, "src/checkout/index.html"),
-  //     product: resolve(__dirname, "src/product_pages/index.html"),
-  //     listing: resolve(__dirname, "src/product-listing/index.html"),
-  //   },
-  // },
+  rollupOptions: {
+    input: {
+      main: resolve(__dirname, "src/index.html"),
+      detail: resolve(__dirname, "src/detail-page.html")
+    },
+  },
 }); 
