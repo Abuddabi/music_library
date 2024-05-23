@@ -6,12 +6,12 @@ export const renderDetails = async () => {
 
   if (!type || !id) window.location.href = "/";
 
-  if (type === "song") renderSongDetails();
+  if (type === "song") renderSongDetails(id);
 
 
 }
 
-const renderSongDetails = async () => {
+const renderSongDetails = async (id) => {
   try {
     const result = await fetchAPI("/shazam-songs/get-details", { "id": id });
     // const result = await fetchAPI("SHAZAM-SONG-DETAILS.json", {}, true);

@@ -1,5 +1,6 @@
 export const fetchAPI = async (endpoint, params = {}, dev = false) => {
-  const API_HOST = import.meta.env.VITE_API_HOST;
+  // const API_HOST = import.meta.env.VITE_API_HOST;
+  const API_HOST = "shazam.p.rapidapi.com";
   let url = new URL(`https://${API_HOST}${endpoint}`);
 
   for (let name in params) {
