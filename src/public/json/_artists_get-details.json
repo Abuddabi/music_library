@@ -1,0 +1,137 @@
+{
+  "data": [
+    {
+      "id": "567072",
+      "type": "artists",
+      "attributes": {
+        "genreNames": [
+          "Alternative"
+        ],
+        "name": "Gorillaz",
+        "editorialNotes": {
+          "name": "Gorillaz",
+          "standard": "Laconic trip-hop beats skate beneath ex-Blur frontman Damon Albarn’s distinctive Brit vocals on the animated foursome’s debut album. Nods to hip-hop futurism on “New Genius (Brother)” and dub swagger on “Slow Country” are fused together by Kid Koala’s skittering scratching and Dan \"The Automator\" Nakamura’s sizzling electronics.",
+          "short": "Laconic trip-hop beats and sizzling electronics from Albarn and co."
+        },
+        "artwork": {
+          "width": 3840,
+          "url": "https://is1-ssl.mzstatic.com/image/thumb/Features211/v4/e3/fd/78/e3fd78c1-b728-8b8d-85de-328974dab33c/mza_17032633450722166961.png/{w}x{h}bb.jpg",
+          "height": 3840,
+          "textColor3": "15ba7d",
+          "textColor2": "f9438c",
+          "textColor4": "c73670",
+          "textColor1": "1ae89c",
+          "bgColor": "020302",
+          "hasP3": false
+        },
+        "url": "https://music.apple.com/us/artist/gorillaz/567072"
+      },
+      "relationships": {
+        "albums": {
+          "data": [
+            {
+              "id": "1217911994",
+              "type": "albums"
+            },
+            {
+              "id": "850571319",
+              "type": "albums"
+            },
+            {
+              "id": "1641561652",
+              "type": "albums"
+            },
+            {
+              "id": "1387814084",
+              "type": "albums"
+            },
+            {
+              "id": "850576570",
+              "type": "albums"
+            },
+            {
+              "id": "859841880",
+              "type": "albums"
+            },
+            {
+              "id": "1530812327",
+              "type": "albums"
+            },
+            {
+              "id": "1673502694",
+              "type": "albums"
+            },
+            {
+              "id": "850569437",
+              "type": "albums"
+            },
+            {
+              "id": "850583573",
+              "type": "albums"
+            },
+            {
+              "id": "850585388",
+              "type": "albums"
+            },
+            {
+              "id": "1580441749",
+              "type": "albums"
+            },
+            {
+              "id": "726389588",
+              "type": "albums"
+            },
+            {
+              "id": "699724514",
+              "type": "albums"
+            },
+            {
+              "id": "884147414",
+              "type": "albums"
+            },
+            {
+              "id": "693778034",
+              "type": "albums"
+            },
+            {
+              "id": "1496308962",
+              "type": "albums"
+            },
+            {
+              "id": "865449454",
+              "type": "albums"
+            },
+            {
+              "id": "693620734",
+              "type": "albums"
+            },
+            {
+              "id": "1500411419",
+              "type": "albums"
+            },
+            {
+              "id": "1505862984",
+              "type": "albums"
+            },
+            {
+              "id": "1525571302",
+              "type": "albums"
+            },
+            {
+              "id": "699909905",
+              "type": "albums"
+            },
+            {
+              "id": "1496311774",
+              "type": "albums"
+            },
+            {
+              "id": "1530573299",
+              "type": "albums"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
