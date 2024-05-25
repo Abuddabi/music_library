@@ -2,6 +2,8 @@ import { qs, handleCustomAPIKey } from "./Utils";
 import { renderDetails } from "./Details";
 import { handleSearch } from "./Search";
 
+export const environment = window.location.hostname === "localhost" ? "development" : "production";
+
 document.addEventListener('DOMContentLoaded', async () => {
   // fetch("https://shazam-api-proxy.onrender.com/bbbbbb?term=dark")
   //   .then(res => res.json())

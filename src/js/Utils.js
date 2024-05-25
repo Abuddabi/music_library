@@ -1,26 +1,28 @@
-export const fetchAPI = async (endpoint, params = {}, dev = false) => {
-  const API_HOST = import.meta.env.VITE_PROXY_HOST;
-  // const API_HOST = "shazam.p.rapidapi.com";
-  let url = new URL(`https://${API_HOST}${endpoint}`);
+import { environment } from "./main";
 
-  for (let name in params) {
-    url.searchParams.append(name, params[name]);
+export const fetchAPI = async (endpoint, params = {}) => {
+  let url, options = {};
+
+  if (environment === "development") {
+    const jsonName = endpoint.replace(/\//g, "_");
+    url = `/music_library/json/${jsonName}.json`;
+  } else {
+    const API_HOST = getAPIHost();
+    url = new URL(`https://${API_HOST}${endpoint}`);
+    for (let name in params) {
+      url.searchParams.append(name, params[name]);
+    }
+    url = url.toString();
+    options = getAPIOptions(API_HOST);
   }
 
   try {
-    let response;
-    if (dev) {
-      response = await fetch(`/music_library/json/${endpoint}`);
-    } else {
-      response = await fetch(url.toString(), {
-        headers: {
-          'x-rapidapi-host': API_HOST,
-          'x-rapidapi-key': import.meta.env.VITE_API_KEY,
-        }
-      });
-    }
+    const response = await fetch(url, options);
     const result = await response.json();
-    if (!response.ok) throw new Error("Something went wrong. Try again later.");
+    if (!response.ok) {
+      console.error(result);
+      throw new Error("Something went wrong. Try again later.");
+    }
 
     return result;
   } catch (error) {
@@ -51,6 +53,9 @@ export function getParams(param) {
 }
 
 export function handleCustomAPIKey() {
+  const apiKey = getLocalStorage("custom-shazam-API");
+  if (apiKey) ifUsingCustomAPI();
+
   const body = qs("body");
   const input = qs(".custom-API-input");
 
@@ -77,8 +82,7 @@ export function handleCustomAPIKey() {
     setLocalStorage("custom-shazam-API", value);
     input.value = "";
 
-    qs(".custom-API-text").innerHTML = "You are using your own API Key. Requests are faster.";
-    qs("#custom-API-KEY-btn").innerHTML = "Update API Key";
+    ifUsingCustomAPI();
 
     const newModal = document.createElement("div");
     newModal.classList.add("modal", "modal-thank-you");
@@ -92,6 +96,33 @@ export function handleCustomAPIKey() {
         qs(".modal-thank-you").remove();
       }, 1000);
     }, { once: true });
+  }
+
+  function ifUsingCustomAPI() {
+    qs(".custom-API-text").innerHTML = "You are using your own API Key. Requests are faster.";
+    qs("#custom-API-KEY-btn").innerHTML = "Update API Key";
+  }
+}
+
+export function getAPIHost() {
+  const apiKey = getLocalStorage("custom-shazam-API");
+  let host;
+
+  if (!apiKey) host = "shazam-api-proxy.onrender.com"; // proxy
+  else host = "shazam.p.rapidapi.com";
+
+  return host;
+}
+
+function getAPIOptions(API_HOST) {
+  const apiKey = getLocalStorage("custom-shazam-API");
+
+  if (!apiKey) return {};
+  else return {
+    headers: {
+      'x-rapidapi-host': API_HOST,
+      'x-rapidapi-key': apiKey,
+    }
   }
 }
 
