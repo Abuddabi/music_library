@@ -68,7 +68,7 @@ export function handleCustomAPIKey() {
     body.classList.remove("modal-active");
   });
   setClick(".custom-API-input-confirm", confirm);
-  document.addEventListener('keydown', (e) => {
+  input.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
       e.preventDefault();
       confirm();

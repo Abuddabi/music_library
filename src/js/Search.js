@@ -4,7 +4,12 @@ export const handleSearch = () => {
   const searchForm = document.querySelector("#search-form");
   if (!searchForm) return;
 
-  searchForm.addEventListener("submit", async (e) => {
+  searchForm.addEventListener("submit", searchSubmit);
+  searchForm.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') searchSubmit(e);
+  });
+
+  async function searchSubmit(e) {
     e.preventDefault();
 
     const searchValue = searchForm.querySelector(".search-input").value;
@@ -34,7 +39,7 @@ export const handleSearch = () => {
     } finally {
       searchForm.classList.remove("disabled");
     }
-  });
+  }
 }
 
 const showSearchResult = (result, list) => {
