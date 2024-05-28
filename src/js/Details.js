@@ -1,4 +1,4 @@
-import { fetchAPI, getParams, noImage, qs } from "./Utils"
+import { fetchAPI, getParams, noImage, qs, setClick } from "./Utils"
 
 export const renderDetails = async () => {
   const type = getParams("type");
@@ -18,8 +18,7 @@ const renderSongDetails = async (id) => {
     const songData = result.resources["shazam-songs"];
     const key = Object.keys(songData)[0];
     const data = songData[key].attributes;
-
-    console.log(data);
+    const lyrics = getLyrics(result.resources);
 
     const main = qs("main");
     main.innerHTML = "";
@@ -43,10 +42,31 @@ const renderSongDetails = async (id) => {
           <div><span class="bold">Artist:</span> ${data.artist}</div>
           <div><span class="bold">Genre:</span> ${data.genres.primary}</div>
           <div><span class="bold">Label:</span> ${data.label}</div>
+          <div>
+            <button id="open-lyrics">Song Lyrics</button>
+            <div class="lyrics-text">
+              ${lyrics}
+            </div>
+          </div>
         </div>
       `;
+
+      setClick("#open-lyrics", (e) => {
+        qs(".lyrics-text").classList.add("active");
+        e.target.setAttribute("hidden", true)
+      });
     }
   } catch (error) {
     console.error(error);
+  }
+
+  function getLyrics(resources) {
+    const lyricsId = Object.keys(resources.lyrics)[0];
+    const lyricsOj = resources.lyrics[lyricsId].attributes;
+    const lyrics = `
+      <p>${lyricsOj.text.join("<br />")}</p>
+      <p class="mt10">${lyricsOj.footer}</p>`;
+
+    return lyrics;
   }
 }
