@@ -144,13 +144,15 @@ const renderArtistDetails = async (id) => {
           const album = item.attributes;
           const albumImg = album.artwork.url.replace(/{w}|{h}/g, '50');
           const releaseDate = (new Date(album.releaseDate)).toLocaleDateString('en-US', { year: '2-digit', month: 'short' });
+          const songs = songsByAlbum[album.name] || [];
+          
           return `
         <li class="album-item-li" style="background-image: url('${albumImg}')">
           <p class="album-name">
             <span class="bold">${album.name} - ${releaseDate}</span>
           </p>
           <a class="album-link apple-bg" href="${album.url}" target="_blank">Album on Apple Music</a>
-          ${songsByAlbum[album.name].map(song => {
+          ${songs.map(song => {
             const songImg = song.artwork.url.replace(/{w}|{h}/g, '50');
             return `
           <p 

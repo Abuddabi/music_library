@@ -3,7 +3,7 @@ import { environment } from "./main";
 export const fetchAPI = async (endpoint, params = {}) => {
   let url, options = {};
 
-  if (environment === "development") {
+  if (environment === "development" && false) {
     const jsonName = endpoint.replace(/\//g, "_");
     url = `/music_library/json/${jsonName}.json`;
   } else {
