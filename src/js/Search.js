@@ -25,14 +25,12 @@ export const handleSearch = () => {
       list.hidden = false;
       list.innerHTML = "";
       const result = await fetchAPI("/search", { "term": searchValue });
-      // const result = await fetchAPI("_search.json", {}, true);
 
       if (Object.entries(result).length === 0) {
         list.innerHTML = `<li class="search-no-result">No results found. Please try another search term.</li>`;
         return;
       } else {
         showSearchResult(result, list);
-        handleSearchItemClick();
       }
     } catch (error) {
       console.error(error);
@@ -56,10 +54,15 @@ const showSearchResult = (result, list) => {
       list.innerHTML += `
         <li
           class="search-item"
-          data-type="song"
-          data-id="${track.key}"
-          style="background-image: url('${track.images?.coverart ?? noImage}')">
-          ${track.title} - ${track.subtitle}
+          >
+          <a
+            data-type="song"
+            class="search-item-link"
+            href="${`/music_library/detail.html?type=song&id=${track.key}`}"
+            style="background-image: url('${track.images?.coverart ?? noImage}')"
+            >
+            ${track.title} - ${track.subtitle}
+          </a>
         </li>
       `;
     });
@@ -78,25 +81,17 @@ const showSearchResult = (result, list) => {
       list.innerHTML += `
         <li 
           class="search-item"
-          data-type="artist"
-          data-id="${artist.id}"
-          style="background-image: url('${artist.avatar ?? noImage}')">
-          ${artist.name}
+          >
+          <a
+            data-type="artist"
+            class="search-item-link" 
+            href="${`/music_library/detail.html?type=artist&id=${artist.adamid}`}"
+            style="background-image: url('${artist.avatar ?? noImage}')"
+            >
+            ${artist.name}
+          </a>
         </li>
       `;
     });
   }
-}
-
-const handleSearchItemClick = () => {
-  const items = document.querySelectorAll(".search-item");
-
-  items.forEach(li => {
-    const clickHandler = (e) => {
-      const data = e.target.dataset;
-      window.location.href = `/music_library/detail.html?type=${data.type}&id=${data.id}`;
-    };
-
-    setClick(li, clickHandler);
-  });
 }
