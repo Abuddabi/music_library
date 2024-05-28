@@ -1,0 +1,1701 @@
+{
+  "data": [
+    {
+      "id": "99951",
+      "type": "artists"
+    }
+  ],
+  "resources": {
+    "artists": {
+      "99951": {
+        "id": "99951",
+        "type": "artists",
+        "attributes": {
+          "genreNames": [
+            "Pop"
+          ],
+          "name": "Billie Myers",
+          "artwork": {
+            "width": 1048,
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Features124/v4/4e/0d/1f/4e0d1ff5-9f2e-0170-0ec9-3dbe25f3a471/pr_source.png/{w}x{h}bb.jpg",
+            "height": 1048,
+            "textColor3": "3b3a3b",
+            "textColor2": "2f2e2f",
+            "textColor4": "555455",
+            "textColor1": "0e0d0e",
+            "bgColor": "edebed",
+            "hasP3": false
+          },
+          "url": "https://music.apple.com/us/artist/billie-myers/99951"
+        },
+        "relationships": {
+          "albums": {
+            "data": [
+              {
+                "id": "1444027943",
+                "type": "albums"
+              },
+              {
+                "id": "1443719463",
+                "type": "albums"
+              },
+              {
+                "id": "622584756",
+                "type": "albums"
+              },
+              {
+                "id": "251797864",
+                "type": "albums"
+              },
+              {
+                "id": "341965671",
+                "type": "albums"
+              }
+            ]
+          }
+        },
+        "views": {
+          "latest-release": {
+            "attributes": {
+              "title": "Latest Release"
+            },
+            "data": []
+          },
+          "top-songs": {
+            "attributes": {
+              "title": "Top Songs"
+            },
+            "data": [
+              {
+                "id": "1444027955",
+                "type": "songs"
+              },
+              {
+                "id": "1444028486",
+                "type": "songs"
+              },
+              {
+                "id": "1444028498",
+                "type": "songs"
+              },
+              {
+                "id": "1444028628",
+                "type": "songs"
+              },
+              {
+                "id": "622584921",
+                "type": "songs"
+              },
+              {
+                "id": "1444029131",
+                "type": "songs"
+              },
+              {
+                "id": "1444028641",
+                "type": "songs"
+              },
+              {
+                "id": "1444028650",
+                "type": "songs"
+              },
+              {
+                "id": "1444028638",
+                "type": "songs"
+              },
+              {
+                "id": "1444028932",
+                "type": "songs"
+              },
+              {
+                "id": "1443719956",
+                "type": "songs"
+              },
+              {
+                "id": "1443719965",
+                "type": "songs"
+              },
+              {
+                "id": "1444028634",
+                "type": "songs"
+              },
+              {
+                "id": "1444028944",
+                "type": "songs"
+              },
+              {
+                "id": "1443719797",
+                "type": "songs"
+              },
+              {
+                "id": "1443720373",
+                "type": "songs"
+              },
+              {
+                "id": "251797977",
+                "type": "songs"
+              },
+              {
+                "id": "341965739",
+                "type": "songs"
+              },
+              {
+                "id": "341965746",
+                "type": "songs"
+              },
+              {
+                "id": "373834364",
+                "type": "songs"
+              }
+            ]
+          }
+        },
+        "meta": {
+          "views": {
+            "order": [
+              "latest-release",
+              "top-songs"
+            ]
+          }
+        }
+      }
+    },
+    "albums": {
+      "341965671": {
+        "id": "341965671",
+        "type": "albums",
+        "attributes": {
+          "copyright": "℗ 2009 FruitLoop Records",
+          "genreNames": [
+            "Dance",
+            "Music"
+          ],
+          "releaseDate": "2009-12-01",
+          "isMasteredForItunes": false,
+          "upc": "884502269697",
+          "artwork": {
+            "width": 600,
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/4a/8d/67/mzi.jqlmbfzh.jpg/{w}x{h}bb.jpg",
+            "height": 600,
+            "textColor3": "3e2105",
+            "textColor2": "281404",
+            "textColor4": "4f2a05",
+            "textColor1": "120804",
+            "bgColor": "ee8408",
+            "hasP3": false
+          },
+          "playParams": {
+            "id": "341965671",
+            "kind": "album"
+          },
+          "url": "https://music.apple.com/us/album/wonderful-the-remixes/341965671",
+          "recordLabel": "FruitLoop Records",
+          "isCompilation": false,
+          "trackCount": 7,
+          "isPrerelease": false,
+          "audioTraits": [
+            "lossless",
+            "lossy-stereo"
+          ],
+          "isSingle": false,
+          "name": "\"Wonderful\" the Remixes",
+          "artistName": "Billie Myers",
+          "isComplete": true
+        },
+        "meta": {
+          "contentVersion": {
+            "RTCI": 0,
+            "MZ_INDEXER": 1710378153459
+          }
+        }
+      },
+      "1444027943": {
+        "id": "1444027943",
+        "type": "albums",
+        "attributes": {
+          "copyright": "℗ 1997 Universal Records, a Division of UMG Recordings, Inc.",
+          "genreNames": [
+            "Alternative",
+            "Music",
+            "Pop",
+            "Singer/Songwriter",
+            "Contemporary Singer/Songwriter",
+            "Rock",
+            "Adult Alternative"
+          ],
+          "releaseDate": "1997-01-01",
+          "isMasteredForItunes": false,
+          "upc": "00601215310023",
+          "artwork": {
+            "width": 1500,
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/02/74/5a/02745ac2-cbfb-a90a-b970-7449be5d4c42/06UMGIM10734.rgb.jpg/{w}x{h}bb.jpg",
+            "height": 1500,
+            "textColor3": "3c3b39",
+            "textColor2": "313029",
+            "textColor4": "5a5954",
+            "textColor1": "0b0a08",
+            "bgColor": "fffffd",
+            "hasP3": false
+          },
+          "playParams": {
+            "id": "1444027943",
+            "kind": "album"
+          },
+          "url": "https://music.apple.com/us/album/growing-pains/1444027943",
+          "recordLabel": "Universal Records",
+          "isCompilation": false,
+          "trackCount": 11,
+          "isPrerelease": false,
+          "audioTraits": [
+            "lossless",
+            "lossy-stereo"
+          ],
+          "isSingle": false,
+          "name": "Growing, Pains",
+          "artistName": "Billie Myers",
+          "isComplete": true
+        },
+        "meta": {
+          "contentVersion": {
+            "RTCI": 0,
+            "MZ_INDEXER": 1712982747882
+          }
+        }
+      },
+      "622584756": {
+        "id": "622584756",
+        "type": "albums",
+        "attributes": {
+          "copyright": "℗ 2013 Billie Myers",
+          "genreNames": [
+            "Pop",
+            "Music",
+            "Adult Contemporary",
+            "Vocal",
+            "Rock"
+          ],
+          "releaseDate": "2013-03-18",
+          "upc": "887516159602",
+          "isMasteredForItunes": false,
+          "artwork": {
+            "width": 1400,
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/23/0d/cd/230dcd5b-005d-846c-6e59-0b5207efb853/887516159602.jpg/{w}x{h}bb.jpg",
+            "height": 1400,
+            "textColor3": "403c30",
+            "textColor2": "3a2d15",
+            "textColor4": "574f39",
+            "textColor1": "1d150a",
+            "bgColor": "cdd8c8",
+            "hasP3": false
+          },
+          "url": "https://music.apple.com/us/album/tea-sympathy/622584756",
+          "playParams": {
+            "id": "622584756",
+            "kind": "album"
+          },
+          "recordLabel": "Fruitloop Records",
+          "isCompilation": false,
+          "trackCount": 10,
+          "isPrerelease": false,
+          "audioTraits": [
+            "lossless",
+            "lossy-stereo"
+          ],
+          "isSingle": false,
+          "name": "Tea & Sympathy",
+          "artistName": "Billie Myers",
+          "isComplete": true
+        },
+        "meta": {
+          "contentVersion": {
+            "RTCI": 0,
+            "MZ_INDEXER": 1710175761350
+          }
+        }
+      },
+      "251797864": {
+        "id": "251797864",
+        "type": "albums",
+        "attributes": {
+          "copyright": "℗ 2007 FruitLoop Records",
+          "genreNames": [
+            "Dance",
+            "Music"
+          ],
+          "releaseDate": "2007-04-06",
+          "isMasteredForItunes": false,
+          "upc": "611357622120",
+          "artwork": {
+            "width": 600,
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/ee/55/8b/mzi.rzfjdlxa.tif/{w}x{h}bb.jpg",
+            "height": 600,
+            "textColor3": "3a2917",
+            "textColor2": "41131c",
+            "textColor4": "632f26",
+            "textColor1": "0e0b09",
+            "bgColor": "eba04c",
+            "hasP3": false
+          },
+          "playParams": {
+            "id": "251797864",
+            "kind": "album"
+          },
+          "url": "https://music.apple.com/us/album/just-sex/251797864",
+          "recordLabel": "FruitLoop Records",
+          "isCompilation": false,
+          "trackCount": 5,
+          "isPrerelease": false,
+          "audioTraits": [
+            "lossless",
+            "lossy-stereo"
+          ],
+          "isSingle": false,
+          "name": "Just Sex",
+          "artistName": "Billie Myers",
+          "isComplete": true
+        },
+        "meta": {
+          "contentVersion": {
+            "RTCI": 0,
+            "MZ_INDEXER": 1709839299345
+          }
+        }
+      },
+      "1443719463": {
+        "id": "1443719463",
+        "type": "albums",
+        "attributes": {
+          "copyright": "℗ 2000 Universal Motown Records, a division of UMG Recordings, Inc.",
+          "genreNames": [
+            "Rock",
+            "Music",
+            "Alternative",
+            "Adult Alternative",
+            "Singer/Songwriter",
+            "Vocal",
+            "Pop",
+            "Adult Contemporary"
+          ],
+          "releaseDate": "2000-01-01",
+          "upc": "00601215768329",
+          "isMasteredForItunes": false,
+          "artwork": {
+            "width": 1392,
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/4c/82/97/4c829729-799f-ce2f-940f-a45831f77607/00601215768329.rgb.jpg/{w}x{h}bb.jpg",
+            "height": 1396,
+            "textColor3": "5c3f34",
+            "textColor2": "411d12",
+            "textColor4": "654337",
+            "textColor1": "36180f",
+            "bgColor": "f5dac9",
+            "hasP3": false
+          },
+          "url": "https://music.apple.com/us/album/vertigo/1443719463",
+          "playParams": {
+            "id": "1443719463",
+            "kind": "album"
+          },
+          "recordLabel": "Universal Records",
+          "isCompilation": false,
+          "trackCount": 11,
+          "isPrerelease": false,
+          "audioTraits": [
+            "lossless",
+            "lossy-stereo"
+          ],
+          "isSingle": false,
+          "name": "Vertigo",
+          "artistName": "Billie Myers",
+          "isComplete": true
+        },
+        "meta": {
+          "contentVersion": {
+            "RTCI": 0,
+            "MZ_INDEXER": 1712982914436
+          }
+        }
+      }
+    },
+    "songs": {
+      "1444028498": {
+        "id": "1444028498",
+        "type": "songs",
+        "attributes": {
+          "albumName": "Growing, Pains",
+          "hasTimeSyncedLyrics": false,
+          "genreNames": [
+            "Alternative",
+            "Music",
+            "Pop",
+            "Singer/Songwriter",
+            "Contemporary Singer/Songwriter",
+            "Rock",
+            "Adult Alternative"
+          ],
+          "trackNumber": 3,
+          "releaseDate": "1997-01-01",
+          "durationInMillis": 304293,
+          "isVocalAttenuationAllowed": false,
+          "isMasteredForItunes": false,
+          "isrc": "USUR19700115",
+          "artwork": {
+            "width": 1500,
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/02/74/5a/02745ac2-cbfb-a90a-b970-7449be5d4c42/06UMGIM10734.rgb.jpg/{w}x{h}bb.jpg",
+            "height": 1500,
+            "textColor3": "3c3b39",
+            "textColor2": "313029",
+            "textColor4": "5a5954",
+            "textColor1": "0b0a08",
+            "bgColor": "fffffd",
+            "hasP3": false
+          },
+          "audioLocale": "en-US",
+          "composerName": "Billie Myers & David Austin",
+          "playParams": {
+            "id": "1444028498",
+            "kind": "song"
+          },
+          "url": "https://music.apple.com/us/album/tell-me/1444027943?i=1444028498",
+          "discNumber": 1,
+          "hasCredits": false,
+          "isAppleDigitalMaster": false,
+          "hasLyrics": true,
+          "audioTraits": [
+            "lossless",
+            "lossy-stereo"
+          ],  
+          "name": "Tell Me",
+          "previews": [
+            {
+              "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/3b/ac/0d/3bac0dd8-2c7e-dea3-ba19-f313d5fb8155/mzaf_1715863979299327330.plus.aac.ep.m4a"
+            }
+          ],
+          "artistName": "Billie Myers"
+        },
+        "meta": {
+          "formerIds": [
+            "99956",
+            "13613250"
+          ],
+          "contentVersion": {
+            "RTCI": 0,
+            "MZ_INDEXER": 0
+          }
+        }
+      },
+      "1443719965": {
+        "id": "1443719965",
+        "type": "songs",
+        "attributes": {
+          "albumName": "Vertigo",
+          "hasTimeSyncedLyrics": false,
+          "genreNames": [
+            "Rock",
+            "Music",
+            "Alternative",
+            "Adult Alternative",
+            "Singer/Songwriter",
+            "Vocal",
+            "Pop",
+            "Adult Contemporary"
+          ],
+          "trackNumber": 5,
+          "releaseDate": "2000-01-01",
+          "durationInMillis": 399533,
+          "isVocalAttenuationAllowed": false,
+          "isMasteredForItunes": false,
+          "isrc": "USUR10000221",
+          "artwork": {
+            "width": 1392,
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/4c/82/97/4c829729-799f-ce2f-940f-a45831f77607/00601215768329.rgb.jpg/{w}x{h}bb.jpg",
+            "height": 1396,
+            "textColor3": "5c3f34",
+            "textColor2": "411d12",
+            "textColor4": "654337",
+            "textColor1": "36180f",
+            "bgColor": "f5dac9",
+            "hasP3": false
+          },
+          "audioLocale": "en-US",
+          "composerName": "Billie Myers & Desmond Child",
+          "playParams": {
+            "id": "1443719965",
+            "kind": "song"
+          },
+          "url": "https://music.apple.com/us/album/room-full-of-you/1443719463?i=1443719965",
+          "discNumber": 1,
+          "hasCredits": false,
+          "isAppleDigitalMaster": false,
+          "hasLyrics": true,
+          "audioTraits": [
+            "lossless",
+            "lossy-stereo"
+          ],
+          "name": "Room Full of You",
+          "previews": [
+            {
+              "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/33/35/42/3335422b-dfaa-2c4c-4720-c4d93549b0a6/mzaf_5156613341974678356.plus.aac.ep.m4a"
+            }
+          ],
+          "artistName": "Billie Myers"
+        },
+        "meta": {
+          "formerIds": [
+            "250483"
+          ],
+          "contentVersion": {
+            "RTCI": 0,
+            "MZ_INDEXER": 0
+          }
+        }
+      },
+      "341965746": {
+        "id": "341965746",
+        "type": "songs",
+        "attributes": {
+          "albumName": "\"Wonderful\" the Remixes",
+          "hasTimeSyncedLyrics": false,
+          "genreNames": [
+            "Dance",
+            "Music"
+          ],
+          "trackNumber": 7,
+          "durationInMillis": 228730,
+          "releaseDate": "2009-12-01",
+          "isVocalAttenuationAllowed": false,
+          "isMasteredForItunes": false,
+          "isrc": "US2BL0900017",
+          "artwork": {
+            "width": 600,
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/4a/8d/67/mzi.jqlmbfzh.jpg/{w}x{h}bb.jpg",
+            "height": 600,
+            "textColor3": "3e2105",
+            "textColor2": "281404",
+            "textColor4": "4f2a05",
+            "textColor1": "120804",
+            "bgColor": "ee8408",
+            "hasP3": false
+          },
+          "audioLocale": "en-US",
+          "composerName": "Billie Myers & Kristen Hall",
+          "playParams": {
+            "id": "341965746",
+            "kind": "song"
+          },
+          "url": "https://music.apple.com/us/album/wonderful-cajjmere-wray-mix-radio-edit/341965671?i=341965746",
+          "discNumber": 1,
+          "hasCredits": false,
+          "isAppleDigitalMaster": false,
+          "hasLyrics": false,
+          "audioTraits": [
+            "lossless",
+            "lossy-stereo"
+          ],
+          "name": "Wonderful - Cajjmere Wray Mix Radio Edit",
+          "previews": [
+            {
+              "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7e/5b/71/7e5b71b0-6dca-1f98-597c-a59b73c6feb2/mzaf_11009773602855854712.plus.aac.ep.m4a"
+            }
+          ],
+          "artistName": "Billie Myers"
+        },
+        "meta": {
+          "contentVersion": {
+            "RTCI": 0,
+            "MZ_INDEXER": 0
+          }
+        }
+      },
+      "1444028641": {
+        "id": "1444028641",
+        "type": "songs",
+        "attributes": {
+          "albumName": "Growing, Pains",
+          "hasTimeSyncedLyrics": false,
+          "genreNames": [
+            "Alternative",
+            "Music",
+            "Pop",
+            "Singer/Songwriter",
+            "Contemporary Singer/Songwriter",
+            "Rock",
+            "Adult Alternative"
+          ],
+          "trackNumber": 7,
+          "durationInMillis": 217040,
+          "releaseDate": "1997-01-01",
+          "isVocalAttenuationAllowed": false,
+          "isMasteredForItunes": false,
+          "isrc": "USUR19700119",
+          "artwork": {
+            "width": 1500,
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/02/74/5a/02745ac2-cbfb-a90a-b970-7449be5d4c42/06UMGIM10734.rgb.jpg/{w}x{h}bb.jpg",
+            "height": 1500,
+            "textColor3": "3c3b39",
+            "textColor2": "313029",
+            "textColor4": "5a5954",
+            "textColor1": "0b0a08",
+            "bgColor": "fffffd",
+            "hasP3": false
+          },
+          "audioLocale": "en-US",
+          "composerName": "Billie Myers & Peter Vale",
+          "playParams": {
+            "id": "1444028641",
+            "kind": "song"
+          },
+          "url": "https://music.apple.com/us/album/mother-daughter-sister-lover/1444027943?i=1444028641",
+          "discNumber": 1,
+          "hasCredits": false,
+          "isAppleDigitalMaster": false,
+          "hasLyrics": true,
+          "audioTraits": [
+            "lossless",
+            "lossy-stereo"
+          ],
+          "name": "Mother, Daughter, Sister, Lover",
+          "previews": [
+            {
+              "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/06/05/ba/0605ba05-03cf-06b8-e444-b9115f0f5cf5/mzaf_3724075255195394705.plus.aac.ep.m4a"
+            }
+          ],
+          "artistName": "Billie Myers"
+        },
+        "meta": {
+          "formerIds": [
+            "13613262",
+            "99964"
+          ],
+          "contentVersion": {
+            "RTCI": 0,
+            "MZ_INDEXER": 0
+          }
+        }
+      },
+      "1444027955": {
+        "id": "1444027955",
+        "type": "songs",
+        "attributes": {
+          "albumName": "Growing, Pains",
+          "hasTimeSyncedLyrics": true,
+          "genreNames": [
+            "Alternative",
+            "Music",
+            "Pop",
+            "Singer/Songwriter",
+            "Contemporary Singer/Songwriter",
+            "Rock",
+            "Adult Alternative"
+          ],
+          "trackNumber": 1,
+          "releaseDate": "1997-01-01",
+          "durationInMillis": 270160,
+          "isVocalAttenuationAllowed": true,
+          "isMasteredForItunes": false,
+          "isrc": "USUR19700113",
+          "artwork": {
+            "width": 1500,
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/02/74/5a/02745ac2-cbfb-a90a-b970-7449be5d4c42/06UMGIM10734.rgb.jpg/{w}x{h}bb.jpg",
+            "height": 1500,
+            "textColor3": "3c3b39",
+            "textColor2": "313029",
+            "textColor4": "5a5954",
+            "textColor1": "0b0a08",
+            "bgColor": "fffffd",
+            "hasP3": false
+          },
+          "composerName": "Billie Myers, Desmond Child & Eric Bazilian",
+          "audioLocale": "en-US",
+          "playParams": {
+            "id": "1444027955",
+            "kind": "song"
+          },
+          "url": "https://music.apple.com/us/album/kiss-the-rain/1444027943?i=1444027955",
+          "discNumber": 1,
+          "hasCredits": false,
+          "isAppleDigitalMaster": false,
+          "hasLyrics": true,
+          "audioTraits": [
+            "lossless",
+            "lossy-stereo"
+          ],
+          "name": "Kiss the Rain",
+          "previews": [
+            {
+              "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a7/44/d7/a744d7c6-d06c-17a2-ad19-cd01b46a8cbd/mzaf_8512763237108905867.plus.aac.ep.m4a"
+            }
+          ],
+          "artistName": "Billie Myers"
+        },
+        "meta": {
+          "formerIds": [
+            "13453646",
+            "99949"
+          ],
+          "contentVersion": {
+            "RTCI": 0,
+            "MZ_INDEXER": 0
+          }
+        }
+      },
+      "1444029131": {
+        "id": "1444029131",
+        "type": "songs",
+        "attributes": {
+          "albumName": "Growing, Pains",
+          "hasTimeSyncedLyrics": false,
+          "genreNames": [
+            "Alternative",
+            "Music",
+            "Pop",
+            "Singer/Songwriter",
+            "Contemporary Singer/Songwriter",
+            "Rock",
+            "Adult Alternative"
+          ],
+          "trackNumber": 11,
+          "releaseDate": "1997-01-01",
+          "durationInMillis": 231440,
+          "isVocalAttenuationAllowed": false,
+          "isMasteredForItunes": false,
+          "isrc": "USUR19700123",
+          "artwork": {
+            "width": 1500,
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/02/74/5a/02745ac2-cbfb-a90a-b970-7449be5d4c42/06UMGIM10734.rgb.jpg/{w}x{h}bb.jpg",
+            "height": 1500,
+            "textColor3": "3c3b39",
+            "textColor2": "313029",
+            "textColor4": "5a5954",
+            "textColor1": "0b0a08",
+            "bgColor": "fffffd",
+            "hasP3": false
+          },
+          "audioLocale": "en-US",
+          "composerName": "Billie Myers & Peter Vale",
+          "playParams": {
+            "id": "1444029131",
+            "kind": "song"
+          },
+          "url": "https://music.apple.com/us/album/much-change-too-soon/1444027943?i=1444029131",
+          "discNumber": 1,
+          "hasCredits": false,
+          "isAppleDigitalMaster": false,
+          "hasLyrics": true,
+          "audioTraits": [
+            "lossless",
+            "lossy-stereo"
+          ],
+          "name": "Much Change Too Soon",
+          "previews": [
+            {
+              "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d6/1b/b8/d61bb8da-786c-2122-1c42-6192516764e8/mzaf_10864474238534945253.plus.aac.ep.m4a"
+            }
+          ],
+          "artistName": "Billie Myers"
+        },
+        "meta": {
+          "formerIds": [
+            "99972",
+            "13613274"
+          ],
+          "contentVersion": {
+            "RTCI": 0,
+            "MZ_INDEXER": 0
+          }
+        }
+      },
+      "1444028486": {
+        "id": "1444028486",
+        "type": "songs",
+        "attributes": {
+          "albumName": "Growing, Pains",
+          "hasTimeSyncedLyrics": false,
+          "genreNames": [
+            "Alternative",
+            "Music",
+            "Pop",
+            "Singer/Songwriter",
+            "Contemporary Singer/Songwriter",
+            "Rock",
+            "Adult Alternative"
+          ],
+          "trackNumber": 2,
+          "durationInMillis": 255907,
+          "releaseDate": "1997-01-01",
+          "isVocalAttenuationAllowed": false,
+          "isMasteredForItunes": false,
+          "isrc": "USUR19700114",
+          "artwork": {
+            "width": 1500,
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/02/74/5a/02745ac2-cbfb-a90a-b970-7449be5d4c42/06UMGIM10734.rgb.jpg/{w}x{h}bb.jpg",
+            "height": 1500,
+            "textColor3": "3c3b39",
+            "textColor2": "313029",
+            "textColor4": "5a5954",
+            "textColor1": "0b0a08",
+            "bgColor": "fffffd",
+            "hasP3": false
+          },
+          "audioLocale": "en-US",
+          "composerName": "Billie Myers & Desmond Child",
+          "playParams": {
+            "id": "1444028486",
+            "kind": "song"
+          },
+          "url": "https://music.apple.com/us/album/a-few-words-too-many/1444027943?i=1444028486",
+          "discNumber": 1,
+          "hasCredits": false,
+          "isAppleDigitalMaster": false,
+          "hasLyrics": true,
+          "audioTraits": [
+            "lossless",
+            "lossy-stereo"
+          ],
+          "name": "A Few Words Too Many",
+          "previews": [
+            {
+              "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d8/c6/b5/d8c6b589-d8ae-44a2-dcb3-0d8d449f986d/mzaf_13120687661875374770.plus.aac.ep.m4a"
+            }
+          ],
+          "artistName": "Billie Myers"
+        },
+        "meta": {
+          "formerIds": [
+            "13613247",
+            "99954"
+          ],
+          "contentVersion": {
+            "RTCI": 0,
+            "MZ_INDEXER": 0
+          }
+        }
+      },
+      "251797977": {
+        "id": "251797977",
+        "type": "songs",
+        "attributes": {
+          "albumName": "Just Sex",
+          "hasTimeSyncedLyrics": false,
+          "genreNames": [
+            "Dance",
+            "Music"
+          ],
+          "trackNumber": 4,
+          "releaseDate": "2007-04-06",
+          "durationInMillis": 616613,
+          "isVocalAttenuationAllowed": false,
+          "isMasteredForItunes": false,
+          "isrc": "USCGJ0766431",
+          "artwork": {
+            "width": 600,
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/ee/55/8b/mzi.rzfjdlxa.tif/{w}x{h}bb.jpg",
+            "height": 600,
+            "textColor3": "3a2917",
+            "textColor2": "41131c",
+            "textColor4": "632f26",
+            "textColor1": "0e0b09",
+            "bgColor": "eba04c",
+            "hasP3": false
+          },
+          "audioLocale": "en-US",
+          "url": "https://music.apple.com/us/album/just-sex-belmares-preve/251797864?i=251797977",
+          "playParams": {
+            "id": "251797977",
+            "kind": "song"
+          },
+          "discNumber": 1,
+          "hasCredits": false,
+          "isAppleDigitalMaster": false,
+          "hasLyrics": false,
+          "audioTraits": [
+            "lossless",
+            "lossy-stereo"
+          ],
+          "name": "Just Sex - Belmares/Preve",
+          "previews": [
+            {
+              "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/34/51/1b/34511bc3-0bb0-123a-d948-a9c9eb8778ac/mzaf_5113162475373956419.plus.aac.ep.m4a"
+            }
+          ],
+          "artistName": "Billie Myers"
+        },
+        "meta": {
+          "contentVersion": {
+            "RTCI": 0,
+            "MZ_INDEXER": 0
+          }
+        }
+      },
+      "373834364": {
+        "id": "373834364",
+        "type": "songs",
+        "attributes": {
+          "albumName": "Party Groove: Gay Days, Vol. 7 (Mixed by Randy Bettis)",
+          "hasTimeSyncedLyrics": false,
+          "genreNames": [
+            "Dance",
+            "Music",
+            "Rock",
+            "Pop",
+            "Trance",
+            "Electronic"
+          ],
+          "trackNumber": 10,
+          "releaseDate": "2010-06-01",
+          "durationInMillis": 404603,
+          "isVocalAttenuationAllowed": false,
+          "isMasteredForItunes": false,
+          "isrc": "USHTN1000155",
+          "artwork": {
+            "width": 1200,
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/a7/5d/c0/mzi.vmdbcuau.jpg/{w}x{h}bb.jpg",
+            "height": 1200,
+            "textColor3": "cfdbe8",
+            "textColor2": "dfdedc",
+            "textColor4": "b6c1cd",
+            "textColor1": "ffffff",
+            "bgColor": "114c90",
+            "hasP3": false
+          },
+          "audioLocale": "en-US",
+          "playParams": {
+            "id": "373834364",
+            "kind": "song"
+          },
+          "url": "https://music.apple.com/us/album/wonderful-barry-harris-saturday-night-club-mix/373834130?i=373834364",
+          "discNumber": 1,
+          "hasCredits": false,
+          "isAppleDigitalMaster": false,
+          "hasLyrics": true,
+          "audioTraits": [
+            "lossless",
+            "lossy-stereo"
+          ],
+          "name": "Wonderful (Barry Harris Saturday Night Club Mix)",
+          "previews": [
+            {
+              "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/v4/17/aa/96/17aa9663-adc5-c710-9458-5a461c3b6958/mzaf_3052525075377992170.plus.aac.ep.m4a"
+            }
+          ],
+          "artistName": "Billie Myers"
+        },
+        "meta": {
+          "contentVersion": {
+            "RTCI": 0,
+            "MZ_INDEXER": 0
+          }
+        }
+      },
+      "1444028638": {
+        "id": "1444028638",
+        "type": "songs",
+        "attributes": {
+          "albumName": "Growing, Pains",
+          "hasTimeSyncedLyrics": false,
+          "genreNames": [
+            "Alternative",
+            "Music",
+            "Pop",
+            "Singer/Songwriter",
+            "Contemporary Singer/Songwriter",
+            "Rock",
+            "Adult Alternative"
+          ],
+          "trackNumber": 6,
+          "durationInMillis": 218027,
+          "releaseDate": "1997-01-01",
+          "isVocalAttenuationAllowed": false,
+          "isMasteredForItunes": false,
+          "isrc": "USUR19700118",
+          "artwork": {
+            "width": 1500,
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/02/74/5a/02745ac2-cbfb-a90a-b970-7449be5d4c42/06UMGIM10734.rgb.jpg/{w}x{h}bb.jpg",
+            "height": 1500,
+            "textColor3": "3c3b39",
+            "textColor2": "313029",
+            "textColor4": "5a5954",
+            "textColor1": "0b0a08",
+            "bgColor": "fffffd",
+            "hasP3": false
+          },
+          "audioLocale": "en-US",
+          "composerName": "Billie Myers, George Hutchison & Jane Dobbins",
+          "playParams": {
+            "id": "1444028638",
+            "kind": "song"
+          },
+          "url": "https://music.apple.com/us/album/first-time/1444027943?i=1444028638",
+          "discNumber": 1,
+          "hasCredits": false,
+          "isAppleDigitalMaster": false,
+          "hasLyrics": true,
+          "audioTraits": [
+            "lossless",
+            "lossy-stereo"
+          ],
+          "name": "First Time",
+          "previews": [
+            {
+              "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/95/3f/0a/953f0a5e-f645-d0c4-5f07-552b61f5bb01/mzaf_16777978039965040768.plus.aac.ep.m4a"
+            }
+          ],
+          "artistName": "Billie Myers"
+        },
+        "meta": {
+          "formerIds": [
+            "13613259",
+            "99962"
+          ],
+          "contentVersion": {
+            "RTCI": 0,
+            "MZ_INDEXER": 0
+          }
+        }
+      },
+      "1444028944": {
+        "id": "1444028944",
+        "type": "songs",
+        "attributes": {
+          "albumName": "Growing, Pains",
+          "hasTimeSyncedLyrics": false,
+          "genreNames": [
+            "Alternative",
+            "Music",
+            "Pop",
+            "Singer/Songwriter",
+            "Contemporary Singer/Songwriter",
+            "Rock",
+            "Adult Alternative"
+          ],
+          "trackNumber": 10,
+          "releaseDate": "1997-01-01",
+          "durationInMillis": 217093,
+          "isVocalAttenuationAllowed": false,
+          "isMasteredForItunes": false,
+          "isrc": "USUR19700122",
+          "artwork": {
+            "width": 1500,
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/02/74/5a/02745ac2-cbfb-a90a-b970-7449be5d4c42/06UMGIM10734.rgb.jpg/{w}x{h}bb.jpg",
+            "height": 1500,
+            "textColor3": "3c3b39",
+            "textColor2": "313029",
+            "textColor4": "5a5954",
+            "textColor1": "0b0a08",
+            "bgColor": "fffffd",
+            "hasP3": false
+          },
+          "composerName": "Billie Myers & George Hutchison",
+          "audioLocale": "en-US",
+          "playParams": {
+            "id": "1444028944",
+            "kind": "song"
+          },
+          "url": "https://music.apple.com/us/album/opposites-attract/1444027943?i=1444028944",
+          "discNumber": 1,
+          "hasCredits": false,
+          "isAppleDigitalMaster": false,
+          "hasLyrics": true,
+          "audioTraits": [
+            "lossless",
+            "lossy-stereo"
+          ],
+          "name": "Opposites Attract",
+          "previews": [
+            {
+              "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/0f/e6/2c/0fe62c83-0288-6e75-6c00-6d13e3f47587/mzaf_8767699429670462143.plus.aac.ep.m4a"
+            }
+          ],
+          "artistName": "Billie Myers"
+        },
+        "meta": {
+          "formerIds": [
+            "99970",
+            "13613271"
+          ],
+          "contentVersion": {
+            "RTCI": 0,
+            "MZ_INDEXER": 0
+          }
+        }
+      },
+      "1444028650": {
+        "id": "1444028650",
+        "type": "songs",
+        "attributes": {
+          "albumName": "Growing, Pains",
+          "hasTimeSyncedLyrics": false,
+          "genreNames": [
+            "Alternative",
+            "Music",
+            "Pop",
+            "Singer/Songwriter",
+            "Contemporary Singer/Songwriter",
+            "Rock",
+            "Adult Alternative"
+          ],
+          "trackNumber": 8,
+          "durationInMillis": 229773,
+          "releaseDate": "1997-01-01",
+          "isVocalAttenuationAllowed": false,
+          "isMasteredForItunes": false,
+          "isrc": "USUR19700120",
+          "artwork": {
+            "width": 1500,
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/02/74/5a/02745ac2-cbfb-a90a-b970-7449be5d4c42/06UMGIM10734.rgb.jpg/{w}x{h}bb.jpg",
+            "height": 1500,
+            "textColor3": "3c3b39",
+            "textColor2": "313029",
+            "textColor4": "5a5954",
+            "textColor1": "0b0a08",
+            "bgColor": "fffffd",
+            "hasP3": false
+          },
+          "audioLocale": "en-US",
+          "composerName": "Billie Myers & Pete Q. Harris",
+          "playParams": {
+            "id": "1444028650",
+            "kind": "song"
+          },
+          "url": "https://music.apple.com/us/album/the-shark-and-the-mermaid/1444027943?i=1444028650",
+          "discNumber": 1,
+          "hasCredits": false,
+          "isAppleDigitalMaster": false,
+          "hasLyrics": true,
+          "audioTraits": [
+            "lossless",
+            "lossy-stereo"
+          ],
+          "name": "The Shark and the Mermaid",
+          "previews": [
+            {
+              "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/36/e3/3a/36e33a44-0269-4755-33f4-b24f4f0b2dd7/mzaf_3699504232333717650.plus.aac.ep.m4a"
+            }
+          ],
+          "artistName": "Billie Myers"
+        },
+        "meta": {
+          "formerIds": [
+            "13613265",
+            "99966"
+          ],
+          "contentVersion": {
+            "RTCI": 0,
+            "MZ_INDEXER": 0
+          }
+        }
+      },
+      "1444028932": {
+        "id": "1444028932",
+        "type": "songs",
+        "attributes": {
+          "albumName": "Growing, Pains",
+          "hasTimeSyncedLyrics": false,
+          "genreNames": [
+            "Alternative",
+            "Music",
+            "Pop",
+            "Singer/Songwriter",
+            "Contemporary Singer/Songwriter",
+            "Rock",
+            "Adult Alternative"
+          ],
+          "trackNumber": 9,
+          "releaseDate": "1997-01-01",
+          "durationInMillis": 225067,
+          "isVocalAttenuationAllowed": false,
+          "isMasteredForItunes": false,
+          "isrc": "USUR19700121",
+          "artwork": {
+            "width": 1500,
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/02/74/5a/02745ac2-cbfb-a90a-b970-7449be5d4c42/06UMGIM10734.rgb.jpg/{w}x{h}bb.jpg",
+            "height": 1500,
+            "textColor3": "3c3b39",
+            "textColor2": "313029",
+            "textColor4": "5a5954",
+            "textColor1": "0b0a08",
+            "bgColor": "fffffd",
+            "hasP3": false
+          },
+          "audioLocale": "en-US",
+          "composerName": "Billie Myers & Peter Vale",
+          "url": "https://music.apple.com/us/album/having-trouble-with-the-language/1444027943?i=1444028932",
+          "playParams": {
+            "id": "1444028932",
+            "kind": "song"
+          },
+          "discNumber": 1,
+          "hasCredits": false,
+          "isAppleDigitalMaster": false,
+          "hasLyrics": true,
+          "audioTraits": [
+            "lossless",
+            "lossy-stereo"
+          ],
+          "name": "Having Trouble with the Language",
+          "previews": [
+            {
+              "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c7/07/71/c7077111-8ac3-3a2a-e580-9b5c7ee9c280/mzaf_5842608680785228485.plus.aac.ep.m4a"
+            }
+          ],
+          "artistName": "Billie Myers"
+        },
+        "meta": {
+          "formerIds": [
+            "99968",
+            "13613268"
+          ],
+          "contentVersion": {
+            "RTCI": 0,
+            "MZ_INDEXER": 0
+          }
+        }
+      },
+      "1444028634": {
+        "id": "1444028634",
+        "type": "songs",
+        "attributes": {
+          "albumName": "Growing, Pains",
+          "hasTimeSyncedLyrics": false,
+          "genreNames": [
+            "Alternative",
+            "Music",
+            "Pop",
+            "Singer/Songwriter",
+            "Contemporary Singer/Songwriter",
+            "Rock",
+            "Adult Alternative"
+          ],
+          "trackNumber": 5,
+          "releaseDate": "1997-01-01",
+          "durationInMillis": 223000,
+          "isVocalAttenuationAllowed": false,
+          "isMasteredForItunes": false,
+          "isrc": "USUR19700117",
+          "artwork": {
+            "width": 1500,
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/02/74/5a/02745ac2-cbfb-a90a-b970-7449be5d4c42/06UMGIM10734.rgb.jpg/{w}x{h}bb.jpg",
+            "height": 1500,
+            "textColor3": "3c3b39",
+            "textColor2": "313029",
+            "textColor4": "5a5954",
+            "textColor1": "0b0a08",
+            "bgColor": "fffffd",
+            "hasP3": false
+          },
+          "composerName": "Billie Myers & Pete Q. Harris",
+          "audioLocale": "en-US",
+          "playParams": {
+            "id": "1444028634",
+            "kind": "song"
+          },
+          "url": "https://music.apple.com/us/album/please-dont-shout/1444027943?i=1444028634",
+          "discNumber": 1,
+          "hasCredits": false,
+          "isAppleDigitalMaster": false,
+          "hasLyrics": true,
+          "audioTraits": [
+            "lossless",
+            "lossy-stereo"
+          ],
+          "name": "Please Don't Shout",
+          "previews": [
+            {
+              "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b0/18/5a/b0185ab1-36e0-48fc-a09e-de31fa394a8a/mzaf_8231826061317025730.plus.aac.ep.m4a"
+            }
+          ],
+          "artistName": "Billie Myers"
+        },
+        "meta": {
+          "formerIds": [
+            "13613256",
+            "99960"
+          ],
+          "contentVersion": {
+            "RTCI": 0,
+            "MZ_INDEXER": 0
+          }
+        }
+      },
+      "341965739": {
+        "id": "341965739",
+        "type": "songs",
+        "attributes": {
+          "albumName": "\"Wonderful\" the Remixes",
+          "hasTimeSyncedLyrics": false,
+          "genreNames": [
+            "Dance",
+            "Music"
+          ],
+          "trackNumber": 6,
+          "durationInMillis": 434120,
+          "releaseDate": "2009-12-01",
+          "isVocalAttenuationAllowed": false,
+          "isMasteredForItunes": false,
+          "isrc": "US2BL0900016",
+          "artwork": {
+            "width": 600,
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/4a/8d/67/mzi.jqlmbfzh.jpg/{w}x{h}bb.jpg",
+            "height": 600,
+            "textColor3": "3e2105",
+            "textColor2": "281404",
+            "textColor4": "4f2a05",
+            "textColor1": "120804",
+            "bgColor": "ee8408",
+            "hasP3": false
+          },
+          "audioLocale": "en-US",
+          "composerName": "Billie Myers & Kristen Hall",
+          "url": "https://music.apple.com/us/album/wonderful-cajjmere-wray-club-mix/341965671?i=341965739",
+          "playParams": {
+            "id": "341965739",
+            "kind": "song"
+          },
+          "discNumber": 1,
+          "hasCredits": false,
+          "isAppleDigitalMaster": false,
+          "hasLyrics": false,
+          "audioTraits": [
+            "lossless",
+            "lossy-stereo"
+          ],
+          "name": "Wonderful - Cajjmere Wray Club Mix",
+          "previews": [
+            {
+              "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/v4/2f/b3/e3/2fb3e390-3094-6643-a2d4-35da7c310652/mzaf_6357996322507590568.plus.aac.ep.m4a"
+            }
+          ],
+          "artistName": "Billie Myers"
+        },
+        "meta": {
+          "contentVersion": {
+            "RTCI": 0,
+            "MZ_INDEXER": 0
+          }
+        }
+      },
+      "1444028628": {
+        "id": "1444028628",
+        "type": "songs",
+        "attributes": {
+          "albumName": "Growing, Pains",
+          "hasTimeSyncedLyrics": false,
+          "genreNames": [
+            "Alternative",
+            "Music",
+            "Pop",
+            "Singer/Songwriter",
+            "Contemporary Singer/Songwriter",
+            "Rock",
+            "Adult Alternative"
+          ],
+          "trackNumber": 4,
+          "releaseDate": "1997-01-01",
+          "durationInMillis": 236973,
+          "isVocalAttenuationAllowed": false,
+          "isMasteredForItunes": false,
+          "isrc": "USUR19700116",
+          "artwork": {
+            "width": 1500,
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/02/74/5a/02745ac2-cbfb-a90a-b970-7449be5d4c42/06UMGIM10734.rgb.jpg/{w}x{h}bb.jpg",
+            "height": 1500,
+            "textColor3": "3c3b39",
+            "textColor2": "313029",
+            "textColor4": "5a5954",
+            "textColor1": "0b0a08",
+            "bgColor": "fffffd",
+            "hasP3": false
+          },
+          "composerName": "Billie Myers & Peter Vale",
+          "audioLocale": "en-US",
+          "playParams": {
+            "id": "1444028628",
+            "kind": "song"
+          },
+          "url": "https://music.apple.com/us/album/you-send-me-flying/1444027943?i=1444028628",
+          "discNumber": 1,
+          "hasCredits": false,
+          "isAppleDigitalMaster": false,
+          "hasLyrics": true,
+          "audioTraits": [
+            "lossless",
+            "lossy-stereo"
+          ],
+          "name": "You Send Me Flying",
+          "previews": [
+            {
+              "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/1b/aa/53/1baa53da-6beb-696e-96b8-391b1e509a31/mzaf_4583173472155223366.plus.aac.ep.m4a"
+            }
+          ],
+          "artistName": "Billie Myers"
+        },
+        "meta": {
+          "formerIds": [
+            "99958",
+            "13613253"
+          ],
+          "contentVersion": {
+            "RTCI": 0,
+            "MZ_INDEXER": 0
+          }
+        }
+      },
+      "622584921": {
+        "id": "622584921",
+        "type": "songs",
+        "attributes": {
+          "albumName": "Tea & Sympathy",
+          "hasTimeSyncedLyrics": true,
+          "genreNames": [
+            "Pop",
+            "Music",
+            "Adult Contemporary",
+            "Vocal",
+            "Rock"
+          ],
+          "trackNumber": 4,
+          "durationInMillis": 220307,
+          "releaseDate": "2009-08-18",
+          "isVocalAttenuationAllowed": true,
+          "isMasteredForItunes": false,
+          "isrc": "USCGH1314910",
+          "artwork": {
+            "width": 1400,
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/23/0d/cd/230dcd5b-005d-846c-6e59-0b5207efb853/887516159602.jpg/{w}x{h}bb.jpg",
+            "height": 1400,
+            "textColor3": "403c30",
+            "textColor2": "3a2d15",
+            "textColor4": "574f39",
+            "textColor1": "1d150a",
+            "bgColor": "cdd8c8",
+            "hasP3": false
+          },
+          "audioLocale": "en-US",
+          "composerName": "Billie Myers, Dee Adam & Jane Dobbins",
+          "playParams": {
+            "id": "622584921",
+            "kind": "song"
+          },
+          "url": "https://music.apple.com/us/album/i-hope-youre-happy-now/622584756?i=622584921",
+          "discNumber": 1,
+          "hasCredits": false,
+          "isAppleDigitalMaster": false,
+          "hasLyrics": true,
+          "audioTraits": [
+            "lossless",
+            "lossy-stereo"
+          ],
+          "name": "I Hope You're Happy Now",
+          "previews": [
+            {
+              "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/9d/ed/42/9ded4298-516a-8ed3-d89b-b9a5c8ddfc62/mzaf_17620996267527317375.plus.aac.ep.m4a"
+            }
+          ],
+          "artistName": "Billie Myers"
+        },
+        "meta": {
+          "contentVersion": {
+            "RTCI": 0,
+            "MZ_INDEXER": 0
+          }
+        }
+      },
+      "1443720373": {
+        "id": "1443720373",
+        "type": "songs",
+        "attributes": {
+          "albumName": "Vertigo",
+          "hasTimeSyncedLyrics": false,
+          "genreNames": [
+            "Rock",
+            "Music",
+            "Alternative",
+            "Adult Alternative",
+            "Singer/Songwriter",
+            "Vocal",
+            "Pop",
+            "Adult Contemporary"
+          ],
+          "trackNumber": 8,
+          "durationInMillis": 335573,
+          "releaseDate": "2000-01-01",
+          "isVocalAttenuationAllowed": false,
+          "isMasteredForItunes": false,
+          "isrc": "USUR10000218",
+          "artwork": {
+            "width": 1392,
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/4c/82/97/4c829729-799f-ce2f-940f-a45831f77607/00601215768329.rgb.jpg/{w}x{h}bb.jpg",
+            "height": 1396,
+            "textColor3": "5c3f34",
+            "textColor2": "411d12",
+            "textColor4": "654337",
+            "textColor1": "36180f",
+            "bgColor": "f5dac9",
+            "hasP3": false
+          },
+          "audioLocale": "en-US",
+          "composerName": "Billie Myers & David Tyson",
+          "playParams": {
+            "id": "1443720373",
+            "kind": "song"
+          },
+          "url": "https://music.apple.com/us/album/never-let-them-see-you-cry/1443719463?i=1443720373",
+          "discNumber": 1,
+          "hasCredits": false,
+          "isAppleDigitalMaster": false,
+          "hasLyrics": true,
+          "audioTraits": [
+            "lossless",
+            "lossy-stereo"
+          ],
+          "name": "Never Let Them See You Cry",
+          "previews": [
+            {
+              "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/87/71/53/877153cc-a52a-6fa3-8d9e-42e5db8c6113/mzaf_10034954620710020902.plus.aac.ep.m4a"
+            }
+          ],
+          "artistName": "Billie Myers"
+        },
+        "meta": {
+          "formerIds": [
+            "250489"
+          ],
+          "contentVersion": {
+            "RTCI": 0,
+            "MZ_INDEXER": 0
+          }
+        }
+      },
+      "1443719797": {
+        "id": "1443719797",
+        "type": "songs",
+        "attributes": {
+          "albumName": "Vertigo",
+          "hasTimeSyncedLyrics": false,
+          "genreNames": [
+            "Rock",
+            "Music",
+            "Alternative",
+            "Adult Alternative",
+            "Singer/Songwriter",
+            "Vocal",
+            "Pop",
+            "Adult Contemporary"
+          ],
+          "trackNumber": 1,
+          "durationInMillis": 288067,
+          "releaseDate": "2000-01-01",
+          "isVocalAttenuationAllowed": false,
+          "isMasteredForItunes": false,
+          "isrc": "USUR10000264",
+          "artwork": {
+            "width": 1392,
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/4c/82/97/4c829729-799f-ce2f-940f-a45831f77607/00601215768329.rgb.jpg/{w}x{h}bb.jpg",
+            "height": 1396,
+            "textColor3": "5c3f34",
+            "textColor2": "411d12",
+            "textColor4": "654337",
+            "textColor1": "36180f",
+            "bgColor": "f5dac9",
+            "hasP3": false
+          },
+          "audioLocale": "en-US",
+          "composerName": "Billie Myers & David Tyson",
+          "playParams": {
+            "id": "1443719797",
+            "kind": "song"
+          },
+          "url": "https://music.apple.com/us/album/am-i-here-yet-return-to-sender/1443719463?i=1443719797",
+          "discNumber": 1,
+          "hasCredits": false,
+          "isAppleDigitalMaster": false,
+          "hasLyrics": true,
+          "audioTraits": [
+            "lossless",
+            "lossy-stereo"
+          ],
+          "name": "Am I Here Yet? (Return to Sender)",
+          "previews": [
+            {
+              "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a0/e1/0d/a0e10d9a-8ef7-7b9f-264f-f8a571ba09c3/mzaf_15190148129760675372.plus.aac.ep.m4a"
+            }
+          ],
+          "artistName": "Billie Myers"
+        },
+        "meta": {
+          "formerIds": [
+            "250472"
+          ],
+          "contentVersion": {
+            "RTCI": 0,
+            "MZ_INDEXER": 0
+          }
+        }
+      },
+      "1443719956": {
+        "id": "1443719956",
+        "type": "songs",
+        "attributes": {
+          "albumName": "Vertigo",
+          "hasTimeSyncedLyrics": false,
+          "genreNames": [
+            "Rock",
+            "Music",
+            "Alternative",
+            "Adult Alternative",
+            "Singer/Songwriter",
+            "Vocal",
+            "Pop",
+            "Adult Contemporary"
+          ],
+          "trackNumber": 3,
+          "durationInMillis": 340800,
+          "releaseDate": "2000-01-01",
+          "isVocalAttenuationAllowed": false,
+          "isMasteredForItunes": false,
+          "isrc": "USUR10000223",
+          "artwork": {
+            "width": 1392,
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/4c/82/97/4c829729-799f-ce2f-940f-a45831f77607/00601215768329.rgb.jpg/{w}x{h}bb.jpg",
+            "height": 1396,
+            "textColor3": "5c3f34",
+            "textColor2": "411d12",
+            "textColor4": "654337",
+            "textColor1": "36180f",
+            "bgColor": "f5dac9",
+            "hasP3": false
+          },
+          "audioLocale": "en-US",
+          "composerName": "Billie Myers, David Tyson & Michael Lattanzi",
+          "url": "https://music.apple.com/us/album/vertigo/1443719463?i=1443719956",
+          "playParams": {
+            "id": "1443719956",
+            "kind": "song"
+          },
+          "discNumber": 1,
+          "hasCredits": false,
+          "isAppleDigitalMaster": false,
+          "hasLyrics": true,
+          "audioTraits": [
+            "lossless",
+            "lossy-stereo"
+          ],
+          "name": "Vertigo",
+          "previews": [
+            {
+              "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/2b/85/1e/2b851e17-b309-37d8-9fb3-4c98f0f99a58/mzaf_15596307244321454025.plus.aac.ep.m4a"
+            }
+          ],
+          "artistName": "Billie Myers"
+        },
+        "meta": {
+          "formerIds": [
+            "250479"
+          ],
+          "contentVersion": {
+            "RTCI": 0,
+            "MZ_INDEXER": 0
+          }
+        }
+      }
+    }
+  }
+}

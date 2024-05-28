@@ -257,13 +257,31 @@ footer p {
   box-shadow: 0 2px 4px var(--green);
 }
 
-.detail-description > * {
+.detail-description {
+  max-width: 840px;
+  display: grid;
+}
+
+.artist-name {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 132%;
+}
+
+.detail-column > * {
   margin-bottom: 10px;
+}
+
+.detail-column audio {
+  width: 100%;
 }
 
 .detail-image {
   display: block;
   margin-bottom: 40px;
+  width: 400px;
+  height: 400px;
+  max-width: 100%;
 }
 
 .detail-description .bold {
@@ -373,7 +391,7 @@ footer p {
 .lyrics-text {
   height: 0;
   overflow: hidden;
-  transition: all 0.5s ease-out;
+  transition: all 10s ease-out;
   line-height: 132%;
 }
 
@@ -386,19 +404,76 @@ footer p {
 }
 
 .album-list {
-  display: flex;
-  flex-direction: column;
+  margin-top: 10px;
 }
 
-.album-list p {
-  width: fit-content;
+.artist-name {
+  font-family: var(--heading-font);
+}
+
+.apple-bg {
+  background: url("/music_library/images/apple-music.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  padding-left: 25px;
+}
+
+.artist-link {
+  line-height: 132%;
+}
+
+.artist-link:hover {
+  color: var(--green);
+}
+
+.album-item-li {
+  list-style-type: none;
+  min-height: 50px;
+  padding-left: 60px;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.album-item-li .album-name {
+  padding-top: 5px;
+  /* min-height: 50px; */
+}
+
+.album-item-li + .album-item-li {
+  margin-top: 10px;
+}
+
+.album-link {
+  display: inline-block;
+  line-height: 132%;
+  margin-top: 5px;
+}
+
+.album-link:hover {
+  color: var(--green);
+}
+
+.album-song-item {
+  line-height: 132%;
+  padding: 4px 8px;
+}
+
+.album-song-item a {
+  display: inline-block;
+  padding: 10px 0;
+}
+
+.to-artist-link {
+  color: var(--black);
   padding: 8px;
-  padding-left: 0;
+  border-radius: 4px;
+  background: var(--green);
+  border: 1px solid var(--black);
   cursor: pointer;
-}
-
-.album-list p:hover {
-  text-decoration: underline;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
 }
 
 @media (min-width: 600px) {
@@ -434,10 +509,27 @@ footer p {
   .modal {
     max-width: 360px;
   }
+
+  .detail-description {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .detail-column + .detail-column {
+    padding-top: 20px;
+  }
 }
 
 @media (min-width: 1000px) {
   footer {
     padding-top: 10px;
+  }
+
+  .detail-description {
+    gap: 40px;
+  }
+
+  .detail-column + .detail-column {
+    padding-top: 40px;
   }
 }
