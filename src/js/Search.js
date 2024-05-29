@@ -28,15 +28,17 @@ export const handleSearch = () => {
 
       input.blur();
       const result = await fetchAPI("/search", { "term": searchValue });
-      list.hidden = false;
-      list.innerHTML = "";
 
+      list.hidden = false;
       if (Object.entries(result).length === 0) {
         list.innerHTML = `<li class="search-no-result">No results found. Please try another search term.</li>`;
         return;
-      } else {
-        saveSearch(result);
+      } else if (result.tracks || result.artists) {
+        list.innerHTML = "";
         showSearchResult(result, list);
+        saveSearch(result);
+      } else {
+        list.innerHTML = `<li class="search-no-result">Something went wrong.</li>`;
       }
     } catch (error) {
       console.error(error);
@@ -85,6 +87,7 @@ const showSearchResult = (result, list) => {
 }
 
 function saveSearch(result) {
+  if (!result.tracks && !result.artists) return;
   const searchResult = getLocalStorage(searchLSKey) || { songs: [], artists: [] };
   const uniqueSongsIds = new Set(searchResult.songs.map(obj => obj.id));
 
