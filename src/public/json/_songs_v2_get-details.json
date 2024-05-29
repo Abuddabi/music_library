@@ -1,0 +1,81 @@
+{
+  "data": [
+    {
+      "id": "1673804556",
+      "type": "songs",
+      "attributes": {
+        "hasTimeSyncedLyrics": true,
+        "albumName": "- (Deluxe)",
+        "genreNames": [
+          "Pop",
+          "Music"
+        ],
+        "trackNumber": 3,
+        "releaseDate": "2023-03-24",
+        "durationInMillis": 194849,
+        "isVocalAttenuationAllowed": true,
+        "isMasteredForItunes": true,
+        "isrc": "GBAHS2201304",
+        "artwork": {
+          "width": 4000,
+          "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/c2/4c/36/c24c3631-08b8-b576-345a-259b395f8dbd/5054197591464.jpg/{w}x{h}bb.jpg",
+          "height": 4000,
+          "textColor3": "403303",
+          "textColor2": "2d1b0d",
+          "textColor4": "54400e",
+          "textColor1": "150c00",
+          "bgColor": "eed311",
+          "hasP3": false
+        },
+        "composerName": "Ed Sheeran, Fred Gibson, Max Martin & Shellback",
+        "audioLocale": "en-US",
+        "url": "https://music.apple.com/us/album/eyes-closed/1673804537?i=1673804556",
+        "playParams": {
+          "id": "1673804556",
+          "kind": "song"
+        },
+        "discNumber": 1,
+        "hasCredits": false,
+        "hasLyrics": true,
+        "isAppleDigitalMaster": true,
+        "audioTraits": [
+          "atmos",
+          "lossless",
+          "lossy-stereo",
+          "spatial"
+        ],
+        "name": "Eyes Closed",
+        "previews": [
+          {
+            "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/45/d7/48/45d7481e-8ecb-2156-6de7-fbf9f03d3cfd/mzaf_736988279643483162.plus.aac.ep.m4a"
+          }
+        ],
+        "artistName": "Ed Sheeran"
+      },
+      "relationships": {
+        "albums": {
+          "data": [
+            {
+              "id": "1673804537",
+              "type": "albums"
+            }
+          ]
+        },
+        "artists": {
+          "data": [
+            {
+              "id": "183313439",
+              "type": "artists"
+            }
+          ]
+        }
+      },
+      "meta": {
+        "contentVersion": {
+          "MZ_INDEXER": 0,
+          "RTCI": 0
+        }
+      }
+    }
+  ]
+}

@@ -18,10 +18,19 @@ export const fetchAPI = async (endpoint, params = {}) => {
 
   try {
     const response = await fetch(url, options);
-    const result = await response.json();
+    const contentType = response.headers.get('content-type');
+
+    let result;
+    if (contentType && contentType.includes('application/json')) {
+      result = await response.json();
+    } else if (contentType && contentType.includes('text/plain')) {
+      const resultText = await response.text();
+      console.error(resultText);
+      result = { resultText };
+    }
+
     if (!response.ok) {
-      console.error(result);
-      throw new Error("Something went wrong. Try again later.");
+      result = { notOk: "Something went wrong. Try again later." };
     }
 
     return result;

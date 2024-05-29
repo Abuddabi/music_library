@@ -22,9 +22,9 @@ export const handleSearch = () => {
         console.log("Search result list is not found.");
         return;
       }
+      const result = await fetchAPI("/search", { "term": searchValue });
       list.hidden = false;
       list.innerHTML = "";
-      const result = await fetchAPI("/search", { "term": searchValue });
 
       if (Object.entries(result).length === 0) {
         list.innerHTML = `<li class="search-no-result">No results found. Please try another search term.</li>`;

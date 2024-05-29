@@ -7,22 +7,14 @@ export const renderDetails = async () => {
   if (!type || !id) window.location.href = "/";
 
   if (type === "song") renderSongDetails(id);
-  if (type === "artist") renderArtistDetails(id);
+  else if (type === "artist") renderArtistDetails(id);
 }
 
 const renderSongDetails = async (id) => {
   try {
     const result = await fetchAPI("/shazam-songs/get-details", { "id": id });
-    const main = qs("main");
-
-    if (Object.entries(result).length === 0) {
-      main.innerHTML = `
-        <p class="details-no-result">
-          No results found. Please try another id or type.
-        </p>
-        <a class="go-home-btn" href="/music_library/">To Home Page</a>`;
-      return;
-    }
+    const hasErrors = checkFetchResult(result);
+    if (hasErrors) return;
 
     const songData = result.resources["shazam-songs"];
     let key = Object.keys(songData)[0];
@@ -33,7 +25,7 @@ const renderSongDetails = async (id) => {
     key = Object.keys(albumData)[0];
     const album = albumData[key].attributes;
 
-    main.innerHTML = `
+    qs("main").innerHTML = `
       <div class="detail-description">
         <div class="detail-column">
           <img class="detail-image" src="${data.images.coverArt ?? noImage}" alt="Music library item detail image." />
@@ -52,12 +44,7 @@ const renderSongDetails = async (id) => {
           <div><span class="bold">Genre:</span> ${data.genres.primary}</div>
           <div><span class="bold">Label:</span> ${data.label}</div>
           <div><a href="${data.webUrl}" target="_blank">Shazam Link</a></div>
-          <div>
-            <button id="open-lyrics">Song Lyrics</button>
-            <div class="lyrics-text">
-              ${lyrics}
-            </div>
-          </div>
+          ${lyrics}
         </div>
       </div>
     `;
@@ -71,11 +58,19 @@ const renderSongDetails = async (id) => {
   }
 
   function getLyrics(resources) {
+    if (!resources.lyrics) return "";
+
     const lyricsId = Object.keys(resources.lyrics)[0];
     const lyricsOj = resources.lyrics[lyricsId].attributes;
     const lyrics = `
-      <p>${lyricsOj.text.join("<br />")}</p>
-      <p class="mt10">${lyricsOj.footer.replace(/\n/g, '<br />')}</p>`;
+    <div>
+      <button id="open-lyrics">Song Lyrics</button>
+      <div class="lyrics-text">
+        <p>${lyricsOj.text.join("<br />")}</p>
+        <p class="mt10">${lyricsOj.footer.replace(/\n/g, '<br />')}</p>
+      </div>
+    </div>
+    `;
 
     return lyrics;
   }
@@ -84,16 +79,8 @@ const renderSongDetails = async (id) => {
 const renderArtistDetails = async (id) => {
   try {
     const result = await fetchAPI("/artists/get-summary", { "id": id });
-    const main = qs("main");
-
-    if (Object.entries(result).length === 0) {
-      main.innerHTML = `
-        <p class="details-no-result">
-          No results found. Please try another id or type.
-        </p>
-        <a class="go-home-btn" href="/music_library/">To Home Page</a>`;
-      return;
-    }
+    const hasErrors = checkFetchResult(result);
+    if (hasErrors) return;
 
     const artistData = result.resources.artists;
     const key = Object.keys(artistData)[0];
@@ -104,7 +91,7 @@ const renderArtistDetails = async (id) => {
     const songs = Object.values(result.resources.songs);
     const albumList = renderAlbums(albums, songs);
 
-    main.innerHTML = `
+    qs("main").innerHTML = `
       <div class="detail-description">
         <div class="detail-column">
           <div class="artist-name">${artist.name}</div>
@@ -141,20 +128,19 @@ const renderArtistDetails = async (id) => {
       <p><span class="bold">Album List:</span></p>
       <ul class="album-list">
         ${albums.map(item => {
-          const album = item.attributes;
-          const albumImg = album.artwork.url.replace(/{w}|{h}/g, '50');
-          const releaseDate = (new Date(album.releaseDate)).toLocaleDateString('en-US', { year: '2-digit', month: 'short' });
-          const songs = songsByAlbum[album.name] || [];
-          
-          return `
+      const album = item.attributes;
+      const albumImg = album.artwork.url.replace(/{w}|{h}/g, '50');
+      const releaseDate = (new Date(album.releaseDate)).toLocaleDateString('en-US', { year: 'numeric', month: 'short' });
+      const songs = songsByAlbum[album.name] || [];
+
+      return `
         <li class="album-item-li" style="background-image: url('${albumImg}')">
           <p class="album-name">
             <span class="bold">${album.name} - ${releaseDate}</span>
           </p>
           <a class="album-link apple-bg" href="${album.url}" target="_blank">Album on Apple Music</a>
           ${songs.map(song => {
-            const songImg = song.artwork.url.replace(/{w}|{h}/g, '50');
-            return `
+        return `
           <p 
             class="album-song-item"
             >
@@ -162,19 +148,49 @@ const renderArtistDetails = async (id) => {
               ${song.name}
             </a>
             <audio controls>
-              <source src="${song.previews.url}" type="audio/mp4">
+              <source src="${song.previews[0].url}" type="audio/mp4">
               Your browser does not support the audio element.
             </audio>
           </p>
             `;
-          }).join("")}
+      }).join("")}
         </li>
           `;
-        }).join("")}
+    }).join("")}
       </ul>
     </div>
     `;
 
     return html;
   }
+}
+
+function checkFetchResult(result) {
+  let message = "";
+  let hasErrors = true;
+
+  if (Object.entries(result).length === 0) {
+    message = `
+    <p class="details-no-result">
+      No results found. Please try another id or type.
+    </p>`;
+  } else if (result.resultText) {
+    message = `
+    <p class="details-no-result">
+      Something went wrong. Here is the answer from the Server: 
+      <span class="bold">${result.resultText}</span>
+    </p>`;
+  } else if (result.notOk) {
+    message = `
+    <p class="details-no-result">${result.notOk}</p>`;
+  } else {
+    hasErrors = false;
+  }
+
+  if (hasErrors) {
+    message += `<a class="go-home-btn" href="/music_library/">To Home Page</a>`;
+    qs("main").innerHTML = message;
+  }
+
+  return hasErrors;
 }
