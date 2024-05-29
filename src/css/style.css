@@ -179,7 +179,7 @@ main {
 
 .search-item:hover {
   border-color: transparent;
-  box-shadow: 0 2px 4px var(--green);
+  /* box-shadow: 0 2px 4px var(--green); */
 }
 
 .search-item-link[data-type="song"]:hover {
@@ -211,7 +211,8 @@ main {
   border-top: 1px solid #ccc;
 }
 
-.search-result-list .search-block-title {
+.search-result-list .search-block-title,
+.search-result-list .saved-search-title {
   min-height: auto;
   padding: 12px 15px 8px;
 }
@@ -224,6 +225,10 @@ main {
 
 .search-block-title h2 {
   font-size: 16px;
+}
+
+.saved-search-title h2 {
+  font-size: 18px;
 }
 
 footer {
@@ -513,6 +518,11 @@ footer p {
   .detail-description {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+  }
+
+  .sticky-element {
+    position: sticky;
+    top: 10px;
   }
 
   .detail-column + .detail-column {

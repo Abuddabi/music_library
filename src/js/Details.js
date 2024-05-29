@@ -28,11 +28,13 @@ const renderSongDetails = async (id) => {
     qs("main").innerHTML = `
       <div class="detail-description">
         <div class="detail-column">
-          <img class="detail-image" src="${data.images.coverArt ?? noImage}" alt="Music library item detail image." />
-          <audio controls>
-            <source src="${data.streaming.preview}" type="audio/mp4">
-            Your browser does not support the audio element.
-          </audio>
+          <div class="sticky-element">
+            <img class="detail-image" src="${data.images.coverArt ?? noImage}" alt="Music library item detail image." />
+            <audio controls>
+              <source src="${data.streaming.preview}" type="audio/mp4">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
         </div>
         <div class="detail-column">
           <div><span class="bold">Title:</span> ${data.title}</div>
@@ -94,8 +96,10 @@ const renderArtistDetails = async (id) => {
     qs("main").innerHTML = `
       <div class="detail-description">
         <div class="detail-column">
-          <div class="artist-name">${artist.name}</div>
-          <img class="detail-image" src="${imageUrl ?? noImage}" alt="Music library item detail image." />
+          <div class="sticky-element">
+            <div class="artist-name">${artist.name}</div>
+            <img class="detail-image" src="${imageUrl ?? noImage}" alt="Music library item detail image." />
+          </div>
         </div>
         <div class="detail-column">
           <div><span class="bold">Genres:</span> ${artist.genreNames.join(", ")}</div>
