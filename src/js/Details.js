@@ -100,7 +100,7 @@ const renderArtistDetails = async (id) => {
 
     let albumList, albums;
     if (result.resources.albums) {
-      const albums = Object.values(result.resources.albums);
+      albums = Object.values(result.resources.albums);
       const songs = Object.values(result.resources.songs);
       albumList = renderAlbums(albums, songs);
     }
@@ -116,7 +116,7 @@ const renderArtistDetails = async (id) => {
         <div class="detail-column">
           <div><span class="bold">Genres:</span> ${artist.genreNames.join(", ")}</div>
           <div><a class="artist-link apple-bg" href="${artist.url}" target="_blank">Artist on Apple Music</a></div>
-          ${albumList && albums ? `
+          ${(albumList && albums) ? `
           <div><span class="bold">Total albums:</span> ${albums.length}</div>
           ${albumList}` : ""}
         </div>
@@ -161,7 +161,7 @@ const renderArtistDetails = async (id) => {
           <p 
             class="album-song-item"
             >
-            <a href="${`/music_library/detail.html?type=song&id=${song.playParams.id}`}">
+            <a href="${song.url}">
               ${song.name}
             </a>
             <audio controls>

@@ -142,6 +142,11 @@ main {
   outline: none;
 }
 
+.search-input:focus {
+  border-color: var(--blue);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .search-button {
   padding: 10px;
   background-color: var(--blue);
@@ -271,6 +276,7 @@ footer p {
   font-weight: bold;
   font-size: 22px;
   line-height: 132%;
+  padding-bottom: 5px;
 }
 
 .detail-column > * {
