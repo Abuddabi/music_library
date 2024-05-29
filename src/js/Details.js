@@ -21,9 +21,15 @@ const renderSongDetails = async (id) => {
     const data = songData[key].attributes;
     const artistId = songData[key].relationships.artists.data[0].id;
     const lyrics = getLyrics(result.resources);
+
     const albumData = result.resources.albums;
-    key = Object.keys(albumData)[0];
-    const album = albumData[key].attributes;
+    let albumInfo = "";
+    if (albumData) {
+      key = Object.keys(albumData)[0];
+      const album = albumData[key].attributes;
+      albumInfo = `<div><span class="bold">Album:</span> ${album.name} - ${album.releaseDate}</div>`
+    }
+
 
     qs("main").innerHTML = `
       <div class="detail-description">
@@ -42,7 +48,7 @@ const renderSongDetails = async (id) => {
           <div>
             <a href="${`/music_library/detail.html?type=artist&id=${artistId}`}" class="to-artist-link">To Artist Page</a>
           </div>
-          <div><span class="bold">Album:</span> ${album.name} - ${album.releaseDate}</div>
+          ${albumInfo}
           <div><span class="bold">Genre:</span> ${data.genres.primary}</div>
           <div><span class="bold">Label:</span> ${data.label}</div>
           <div><a href="${data.webUrl}" target="_blank">Shazam Link</a></div>

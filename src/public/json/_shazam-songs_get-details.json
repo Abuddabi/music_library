@@ -1,65 +1,15 @@
 {
   "data": [
     {
-      "id": "20066955",
+      "id": "623588703",
       "type": "shazam-songs"
     }
   ],
   "resources": {
     "artist-highlights": {
-      "99951": {
-        "id": "99951",
+      "1464868107": {
+        "id": "1464868107",
         "type": "artist-highlights"
-      }
-    },
-    "track-highlights": {
-      "1445849710": {
-        "id": "1445849710",
-        "type": "track-highlights"
-      }
-    },
-    "related-tracks": {
-      "track-similarities-id-20066955": {
-        "id": "track-similarities-id-20066955",
-        "type": "related-tracks"
-      }
-    },
-    "songs": {
-      "1444027955": {
-        "id": "1444027955",
-        "type": "songs",
-        "attributes": {
-          "hasLyrics": true,
-          "hasTimeSyncedLyrics": true,
-          "unitags": [
-            {
-              "namespace": "MemoryAppropriateness",
-              "tag": "Appropriate",
-              "score": 0.8942284
-            },
-            {
-              "namespace": "EditorialGenres",
-              "tag": "Pop",
-              "score": 0.85632735
-            },
-            {
-              "namespace": "EditorialEra",
-              "tag": "90s",
-              "score": 0.95940894
-            }
-          ]
-        }
-      }
-    },
-    "albums": {
-      "1444027943": {
-        "id": "1444027943",
-        "type": "albums",
-        "attributes": {
-          "artistName": "Billie Myers",
-          "name": "Growing, Pains",
-          "releaseDate": "1997"
-        }
       }
     },
     "shazam-artists": {
@@ -69,146 +19,20 @@
       }
     },
     "artists": {
-      "99951": {
-        "id": "99951",
+      "1464868107": {
+        "id": "1464868107",
         "type": "artists",
         "attributes": {
-          "name": "Billie Myers"
-        }
-      }
-    },
-    "lyrics": {
-      "19757555": {
-        "id": "19757555",
-        "type": "lyrics",
-        "attributes": {
-          "text": [
-            "Hello",
-            "Can you hear me",
-            "Am I getting through to you",
-            "",
-            "Hello",
-            "Is it late there?",
-            "There's a laughter on the line",
-            "Are you sure you're there alone",
-            "",
-            "'Cause I'm",
-            "Trying to explain",
-            "Something's wrong",
-            "You just don't sound the same",
-            "",
-            "Why don't you",
-            "Why don't you",
-            "Go outside",
-            "Go outside",
-            "",
-            "Kiss the rain",
-            "Whenever you need me",
-            "Kiss the rain",
-            "Whenever I'm gone too long",
-            "",
-            "If your lips feel lonely and thirsty",
-            "Kiss the rain",
-            "And wait for the dawn",
-            "Keep in mind",
-            "",
-            "We're under the same sky",
-            "And the night's",
-            "As empty for me as for you",
-            "If you feel",
-            "",
-            "You can't wait till morning",
-            "Kiss the rain",
-            "Kiss the rain",
-            "Kiss the rain",
-            "",
-            "Hello",
-            "Do you miss me",
-            "I hear you say you do",
-            "But not the way I'm missing you",
-            "What's new?",
-            "",
-            "How's the weather",
-            "Is it stormy where you are",
-            "You sound so close but it feels like you're so far",
-            "Oh would it mean anything",
-            "",
-            "If you knew",
-            "What I'm left imagining",
-            "In my mind",
-            "In my mind",
-            "Would you go",
-            "Would you go",
-            "",
-            "Kiss the rain",
-            "As you fall",
-            "Over me",
-            "",
-            "Think of me",
-            "Think of me",
-            "Think of me",
-            "Only me",
-            "Kiss the rain",
-            "",
-            "Whenever you need me",
-            "Kiss the rain",
-            "Whenever I'm gone too long",
-            "If your lips",
-            "Feel hungry and tempted",
-            "Kiss the rain",
-            "And wait for the dawn",
-            "Keep in mind",
-            "",
-            "We're under the same sky",
-            "And the night's",
-            "As empty for me as for you",
-            "If you feel you can't wait till morning",
-            "",
-            "Kiss the rain",
-            "Kiss the rain",
-            "Kiss the rain",
-            "Kiss the rain",
-            "(Kiss the rain)",
-            "",
-            "Hello",
-            "Can you hear me",
-            "Can you hear me",
-            "Can you hear me"
-          ],
-          "footer": "Writer(s): Desmond Child, Eric M. Bazilian, Billie Myers\nLyrics powered by www.musixmatch.com",
-          "musixmatchLyricsId": "925378",
-          "providerName": "musixmatch",
-          "syncAvailable": false
+          "name": "Reynold$"
         }
       }
     },
     "genres": {
-      "10": {
-        "id": "10",
+      "18": {
+        "id": "18",
         "type": "genres",
         "attributes": {
-          "name": "Singer/Songwriter"
-        }
-      },
-      "14": {
-        "id": "14",
-        "type": "genres",
-        "attributes": {
-          "name": "Pop"
-        }
-      },
-      "20": {
-        "id": "20",
-        "type": "genres",
-        "attributes": {
-          "name": "Alternative"
-        }
-      },
-      "21": {
-        "id": "21",
-        "type": "genres",
-        "attributes": {
-          "name": "Rock"
+          "name": "Hip-Hop/Rap"
         }
       },
       "34": {
@@ -217,104 +41,53 @@
         "attributes": {
           "name": "Music"
         }
-      },
-      "1064": {
-        "id": "1064",
-        "type": "genres",
-        "attributes": {
-          "name": "Contemporary Singer/Songwriter"
-        }
-      },
-      "1144": {
-        "id": "1144",
-        "type": "genres",
-        "attributes": {
-          "name": "Adult Alternative"
-        }
       }
     },
     "shazam-songs": {
-      "20066955": {
-        "id": "20066955",
+      "623588703": {
+        "id": "623588703",
         "type": "shazam-songs",
         "attributes": {
           "type": "MUSIC",
-          "title": "Kiss the Rain",
-          "artist": "Billie Myers",
-          "primaryArtist": "Billie Myers",
-          "label": "Universal Records",
+          "title": "Demons",
+          "artist": "Reynold$",
+          "primaryArtist": "Reynold$",
           "explicit": false,
-          "isrc": "USUR19700113",
-          "webUrl": "https://www.shazam.com/track/20066955/kiss-the-rain?co=US&offsetInMilliseconds=&timeSkew=&trackLength=",
+          "webUrl": "https://www.shazam.com/track/623588703/demons?co=US&offsetInMilliseconds=&timeSkew=&trackLength=",
           "images": {
-            "artistAvatar": "https://is1-ssl.mzstatic.com/image/thumb/Features124/v4/4e/0d/1f/4e0d1ff5-9f2e-0170-0ec9-3dbe25f3a471/pr_source.png/800x800cc.jpg",
-            "coverArt": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/02/74/5a/02745ac2-cbfb-a90a-b970-7449be5d4c42/06UMGIM10734.rgb.jpg/400x400cc.jpg",
-            "coverArtHq": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/02/74/5a/02745ac2-cbfb-a90a-b970-7449be5d4c42/06UMGIM10734.rgb.jpg/800x800cc.jpg"
+            "coverArt": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/f7/04/35/f704351e-5103-f3ba-badc-4c585495ae35/artwork.jpg/400x400cc.jpg",
+            "coverArtHq": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/f7/04/35/f704351e-5103-f3ba-badc-4c585495ae35/artwork.jpg/800x800cc.jpg"
           },
           "artwork": {
-            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/02/74/5a/02745ac2-cbfb-a90a-b970-7449be5d4c42/06UMGIM10734.rgb.jpg/{w}x{h}cc.jpg",
-            "textColor1": "0b0a08",
-            "textColor2": "313029",
-            "textColor3": "3c3b39",
-            "textColor4": "5a5954",
-            "bgColor": "fffffd"
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/f7/04/35/f704351e-5103-f3ba-badc-4c585495ae35/artwork.jpg/{w}x{h}cc.jpg",
+            "textColor1": "f4f6f5",
+            "textColor2": "d2d4c6",
+            "textColor3": "cacccb",
+            "textColor4": "afb1a5",
+            "bgColor": "232323"
           },
           "share": {
-            "subject": "Kiss the Rain - Billie Myers",
-            "text": "Kiss the Rain by Billie Myers",
-            "image": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/02/74/5a/02745ac2-cbfb-a90a-b970-7449be5d4c42/06UMGIM10734.rgb.jpg/400x400cc.jpg",
-            "twitter": "I used @Shazam to discover Kiss the Rain by Billie Myers.",
-            "html": "https://www.shazam.com/snippets/email-share/20066955?lang=en-US&country=US",
-            "snapchat": "https://www.shazam.com/partner/sc/track/20066955"
+            "subject": "Demons - Reynold$",
+            "text": "Demons by Reynold$",
+            "image": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/f7/04/35/f704351e-5103-f3ba-badc-4c585495ae35/artwork.jpg/400x400cc.jpg",
+            "twitter": "I used @Shazam to discover Demons by Reynold$.",
+            "html": "https://www.shazam.com/snippets/email-share/623588703?lang=en-US&country=US",
+            "snapchat": "https://www.shazam.com/partner/sc/track/623588703"
           },
           "streaming": {
-            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a7/44/d7/a744d7c6-d06c-17a2-ad19-cd01b46a8cbd/mzaf_8512763237108905867.plus.aac.ep.m4a",
-            "deeplink": "intent://music.apple.com/us/album/kiss-the-rain/1444027943?i=1444027955&mttnagencyid=s2n&mttnsiteid=125115&mttn3pid=Apple-Shazam&mttnsub1=Shazam_android_am&mttnsub2=5348615A-616D-3235-3830-44754D6D5973&itscg=30201&app=music&itsct=Shazam_android_am#Intent;scheme=http;package=com.apple.android.music;action=android.intent.action.VIEW;end",
             "store": "https://play.google.com/store/apps/details?id=com.apple.android.music&referrer=utm_source=https%3A%2F%2Fmusic.apple.com%2Fsubscribe%3Fmttnagencyid%3Ds2n%26mttnsiteid%3D125115%26mttn3pid%3DApple-Shazam%26mttnsub1%3DShazam_android_am%26mttnsub2%3D5348615A-616D-3235-3830-44754D6D5973%26itscg%3D30201%26app%3Dmusic%26itsct%3DShazam_android_am"
           },
           "classicalAvailability": false,
           "genres": {
-            "primary": "Alternative"
+            "primary": "Hip-Hop/Rap"
           }
         },
         "relationships": {
           "artist-highlights": {
             "data": [
               {
-                "id": "99951",
+                "id": "1464868107",
                 "type": "artist-highlights"
-              }
-            ]
-          },
-          "track-highlights": {
-            "data": [
-              {
-                "id": "1445849710",
-                "type": "track-highlights"
-              }
-            ]
-          },
-          "related-tracks": {
-            "data": [
-              {
-                "id": "track-similarities-id-20066955",
-                "type": "related-tracks"
-              }
-            ]
-          },
-          "songs": {
-            "data": [
-              {
-                "id": "1444027955",
-                "type": "songs"
-              }
-            ]
-          },
-          "albums": {
-            "data": [
-              {
-                "id": "1444027943",
-                "type": "albums"
               }
             ]
           },
@@ -329,47 +102,19 @@
           "artists": {
             "data": [
               {
-                "id": "99951",
+                "id": "1464868107",
                 "type": "artists"
-              }
-            ]
-          },
-          "lyrics": {
-            "data": [
-              {
-                "id": "19757555",
-                "type": "lyrics"
               }
             ]
           },
           "genres": {
             "data": [
               {
-                "id": "20",
+                "id": "18",
                 "type": "genres"
               },
               {
                 "id": "34",
-                "type": "genres"
-              },
-              {
-                "id": "14",
-                "type": "genres"
-              },
-              {
-                "id": "21",
-                "type": "genres"
-              },
-              {
-                "id": "1064",
-                "type": "genres"
-              },
-              {
-                "id": "1144",
-                "type": "genres"
-              },
-              {
-                "id": "10",
                 "type": "genres"
               }
             ]
