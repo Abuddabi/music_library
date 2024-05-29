@@ -23,11 +23,10 @@ const renderSongDetails = async (id) => {
     const lyrics = getLyrics(result.resources);
 
     const albumData = result.resources.albums;
-    let albumInfo = "";
+    let album;
     if (albumData) {
       key = Object.keys(albumData)[0];
-      const album = albumData[key].attributes;
-      albumInfo = `<div><span class="bold">Album:</span> ${album.name} - ${album.releaseDate}</div>`
+      album = albumData[key].attributes;
     }
 
 
@@ -48,19 +47,22 @@ const renderSongDetails = async (id) => {
           <div>
             <a href="${`/music_library/detail.html?type=artist&id=${artistId}`}" class="to-artist-link">To Artist Page</a>
           </div>
-          ${albumInfo}
+          ${albumData ? `<div><span class="bold">Album:</span> ${album.name} - ${album.releaseDate}</div>` : ""}
           <div><span class="bold">Genre:</span> ${data.genres.primary}</div>
-          <div><span class="bold">Label:</span> ${data.label}</div>
+          ${data.label ? `<div><span class="bold">Label:</span> ${data.label}</div>` : ""}          
           <div><a href="${data.webUrl}" target="_blank">Shazam Link</a></div>
           ${lyrics}
         </div>
       </div>
     `;
 
-    setClick("#open-lyrics", (e) => {
-      qs(".lyrics-text").classList.add("active");
-      e.target.setAttribute("hidden", true)
-    });
+    const openLyrics = qs("#open-lyrics");
+    if (openLyrics) {
+      setClick(openLyrics, (e) => {
+        qs(".lyrics-text").classList.add("active");
+        e.target.setAttribute("hidden", true)
+      });
+    }
   } catch (error) {
     console.error(error);
   }
@@ -95,9 +97,13 @@ const renderArtistDetails = async (id) => {
     const artist = artistData[key].attributes;
 
     const imageUrl = artist.artwork?.url?.replace(/{w}|{h}/g, '400');
-    const albums = Object.values(result.resources.albums);
-    const songs = Object.values(result.resources.songs);
-    const albumList = renderAlbums(albums, songs);
+
+    let albumList, albums;
+    if (result.resources.albums) {
+      const albums = Object.values(result.resources.albums);
+      const songs = Object.values(result.resources.songs);
+      albumList = renderAlbums(albums, songs);
+    }
 
     qs("main").innerHTML = `
       <div class="detail-description">
@@ -110,8 +116,9 @@ const renderArtistDetails = async (id) => {
         <div class="detail-column">
           <div><span class="bold">Genres:</span> ${artist.genreNames.join(", ")}</div>
           <div><a class="artist-link apple-bg" href="${artist.url}" target="_blank">Artist on Apple Music</a></div>
+          ${albumList && albums ? `
           <div><span class="bold">Total albums:</span> ${albums.length}</div>
-          ${albumList}
+          ${albumList}` : ""}
         </div>
       </div>
     `;
