@@ -61,6 +61,7 @@ header {
 .logo {
   width: 30px;
   height: 30px;
+  animation: spin 4s linear infinite;
 }
 
 .logo-name {
